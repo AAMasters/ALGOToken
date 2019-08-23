@@ -1,2 +1,2 @@
-# ALGOToken
-Responsible for the issuing of ALGO tokens
+# IntelliToken
+Responsible for the issuing of Intelli tokens
