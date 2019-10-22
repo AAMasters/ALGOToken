@@ -1,6 +1,6 @@
 {
     "contracts": {
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
             "IntelliCoreTeamRole": {
                 "abi": [
                     {
@@ -75,8 +75,8 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoPool.sol": {
-            "AlgoPool": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliPool.sol": {
+            "IntelliPool": {
                 "abi": [
                     {
                         "constant": false,
@@ -292,13 +292,13 @@
                         "trasferToMiner(address)": "2296f4c7"
                     }
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"trasferToMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"TOKEN_FACTOR\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_4_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_1_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_3_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_0_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_5_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_2_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"poolType\",\"type\":\"uint16\"},{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoPool.sol\":\"AlgoPool\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol\":{\"keccak256\":\"0x98513c8bd78301543260967ae791ebb2a652f73fef585417f72a3097f4e1ae21\",\"urls\":[\"bzzr://a9cfa1df913c0a9ad0937d821ead954e31f7da6a462933bcfa20abe2b44ec984\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoPool.sol\":{\"keccak256\":\"0xe9776836589d57d2294c261fbeefaac9b146ad2ea4c06995ce258abc1cd44bee\",\"urls\":[\"bzzr://d8fc6e549c0eb65e15d6f14cf317dbd8a736804709bd1e443922c1c97b873aa0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol\":{\"keccak256\":\"0xb457e39e512b5475c3e70193ab0a751f6626a50417954247f0cf47c7ca15eff7\",\"urls\":[\"bzzr://3b585a4055121fee393f2b691538036c87f56556f43f0b6e851a88de7b8275e6\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"trasferToMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"TOKEN_FACTOR\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_4_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_1_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_3_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_0_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_5_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"CAT_2_VALUE\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"poolType\",\"type\":\"uint16\"},{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliPool.sol\":\"IntelliPool\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol\":{\"keccak256\":\"0x98513c8bd78301543260967ae791ebb2a652f73fef585417f72a3097f4e1ae21\",\"urls\":[\"bzzr://a9cfa1df913c0a9ad0937d821ead954e31f7da6a462933bcfa20abe2b44ec984\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliPool.sol\":{\"keccak256\":\"0xe9776836589d57d2294c261fbeefaac9b146ad2ea4c06995ce258abc1cd44bee\",\"urls\":[\"bzzr://d8fc6e549c0eb65e15d6f14cf317dbd8a736804709bd1e443922c1c97b873aa0\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol\":{\"keccak256\":\"0xb457e39e512b5475c3e70193ab0a751f6626a50417954247f0cf47c7ca15eff7\",\"urls\":[\"bzzr://3b585a4055121fee393f2b691538036c87f56556f43f0b6e851a88de7b8275e6\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
             "IIntelliMiner": {
                 "abi": [
                     {
@@ -352,7 +352,7 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "Roles": {
                 "abi": [],
                 "devdoc": {
@@ -380,13 +380,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "SafeMath": {
                 "abi": [],
                 "devdoc": {
@@ -416,13 +416,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "IERC20": {
                 "abi": [
                     {
@@ -626,7 +626,7 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "SafeERC20": {
                 "abi": [],
                 "devdoc": {
@@ -656,7 +656,7 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
@@ -664,9 +664,9 @@
         }
     },
     "sources": {
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
                 "exportedSymbols": {
                     "IntelliCoreTeamRole": [
                         86
@@ -687,8 +687,8 @@
                         "src": "0:24:0"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "file": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                         "id": 2,
                         "nodeType": "ImportDirective",
                         "scope": 87,
@@ -1681,11 +1681,11 @@
             },
             "id": 0
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoPool.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliPool.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoPool.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliPool.sol",
                 "exportedSymbols": {
-                    "AlgoPool": [
+                    "IntelliPool": [
                         274
                     ]
                 },
@@ -1703,8 +1703,8 @@
                         "src": "0:23:1"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "file": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "id": 89,
                         "nodeType": "ImportDirective",
                         "scope": 275,
@@ -1714,8 +1714,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "file": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                         "id": 90,
                         "nodeType": "ImportDirective",
                         "scope": 275,
@@ -1725,7 +1725,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
                         "file": "./IIntelliMiner.sol",
                         "id": 91,
                         "nodeType": "ImportDirective",
@@ -1736,7 +1736,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
                         "file": "./IntelliCoreTeamRole.sol",
                         "id": 92,
                         "nodeType": "ImportDirective",
@@ -1778,7 +1778,7 @@
                             274,
                             86
                         ],
-                        "name": "AlgoPool",
+                        "name": "IntelliPool",
                         "nodeType": "ContractDefinition",
                         "nodes": [
                             {
@@ -4213,9 +4213,9 @@
             },
             "id": 1
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
                 "exportedSymbols": {
                     "IIntelliMiner": [
                         287
@@ -4368,9 +4368,9 @@
             },
             "id": 2
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                 "exportedSymbols": {
                     "Roles": [
                         381
@@ -5647,9 +5647,9 @@
             },
             "id": 3
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                 "exportedSymbols": {
                     "SafeMath": [
                         509
@@ -7291,9 +7291,9 @@
             },
             "id": 4
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                 "exportedSymbols": {
                     "IERC20": [
                         578
@@ -8128,9 +8128,9 @@
             },
             "id": 5
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                 "exportedSymbols": {
                     "SafeERC20": [
                         722
@@ -8151,7 +8151,7 @@
                         "src": "0:24:6"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "file": "./IERC20.sol",
                         "id": 581,
                         "nodeType": "ImportDirective",
@@ -8162,7 +8162,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                        "absolutePath": "d:/GitHub/Sabra/IntelliToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                         "file": "../../math/SafeMath.sol",
                         "id": 582,
                         "nodeType": "ImportDirective",

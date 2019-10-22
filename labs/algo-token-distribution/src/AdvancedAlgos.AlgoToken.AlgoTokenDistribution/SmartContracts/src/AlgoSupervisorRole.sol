@@ -2,7 +2,7 @@ pragma solidity ^0.4.24;
 
 import "openzeppelin-solidity/contracts/access/Roles.sol";
 
-contract AlgoSupervisorRole {
+contract IntelliSupervisorRole {
     using Roles for Roles.Role;
 
     Roles.Role private _supervisors;

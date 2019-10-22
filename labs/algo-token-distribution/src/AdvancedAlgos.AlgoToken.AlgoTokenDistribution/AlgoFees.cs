@@ -10,7 +10,7 @@ using Nethereum.Web3;
 
 namespace Superalgos.IntelliToken.IntelliTokenDistribution
 {
-    public class AlgoFees : SmartContract<AlgoFees>
+    public class IntelliFees : SmartContract<IntelliFees>
     {
         private Function _registerMiner;
         private Function _unregisterMiner;
@@ -23,11 +23,11 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution
         private Function _getMinerCount;
         private Function _getMinerByIndex;
 
-        public AlgoFees(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
-        public AlgoFees(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
+        public IntelliFees(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
+        public IntelliFees(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
 
-        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(AlgoFees)}.abi";
-        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(AlgoFees)}.bin";
+        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(IntelliFees)}.abi";
+        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(IntelliFees)}.bin";
         protected override BigInteger DeploymentGasUnits => 1400000;
 
         public Task<TransactionReceipt> DeployAsync(string tokenAddress)

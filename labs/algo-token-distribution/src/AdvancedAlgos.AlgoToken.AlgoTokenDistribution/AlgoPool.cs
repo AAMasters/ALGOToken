@@ -10,16 +10,16 @@ using Nethereum.Web3;
 
 namespace Superalgos.IntelliToken.IntelliTokenDistribution
 {
-    public class AlgoPool : SmartContract<AlgoPool>
+    public class IntelliPool : SmartContract<IntelliPool>
     {
         private Function _transferToMiner;
         private Function _terminate;
 
-        public AlgoPool(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
-        public AlgoPool(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
+        public IntelliPool(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
+        public IntelliPool(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
 
-        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(AlgoPool)}.abi";
-        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(AlgoPool)}.bin";
+        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(IntelliPool)}.abi";
+        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(IntelliPool)}.bin";
         protected override BigInteger DeploymentGasUnits => 1200000;
 
         public Task<TransactionReceipt> DeployAsync(byte poolType, string tokenAddress)

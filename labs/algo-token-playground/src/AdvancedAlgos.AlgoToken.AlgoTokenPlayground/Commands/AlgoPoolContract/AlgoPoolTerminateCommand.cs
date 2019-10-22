@@ -9,13 +9,13 @@ using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoPoolContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliPoolContract
 {
-    public class AlgoPoolTerminateCommand : EthInvokeTransactionalFunctionCommand
+    public class IntelliPoolTerminateCommand : EthInvokeTransactionalFunctionCommand
     {
         protected override async Task<TransactionReceipt> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoPool = new AlgoPool(contractAddress, web3, context.GasPriceProvider);
+            var algoPool = new IntelliPool(contractAddress, web3, context.GasPriceProvider);
 
             return await algoPool.TerminateAsync();
         }

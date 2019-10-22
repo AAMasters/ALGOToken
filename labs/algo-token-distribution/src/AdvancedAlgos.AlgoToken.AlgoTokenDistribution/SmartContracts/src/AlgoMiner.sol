@@ -4,13 +4,13 @@ import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
 import "./IIntelliMiner.sol";
-import "./AlgoCommon.sol";
+import "./IntelliCommon.sol";
 import "./ERC20TokenHolder.sol";
-import "./AlgoSystemRole.sol";
+import "./IntelliSystemRole.sol";
 import "./IntelliCoreTeamRole.sol";
-import "./AlgoSupervisorRole.sol";
+import "./IntelliSupervisorRole.sol";
 
-contract IntelliMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole, AlgoSupervisorRole, IIntelliMiner {
+contract IntelliMiner is IntelliCommon, ERC20TokenHolder, IntelliSystemRole, IntelliCoreTeamRole, IntelliSupervisorRole, IIntelliMiner {
     using SafeERC20 for IERC20;
 
     uint256 private constant DAYS_PER_YEAR = 365;
@@ -40,9 +40,9 @@ contract IntelliMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, IntelliCo
 
     constructor(MinerType minerType, uint8 category, address minerAccountAddress, address referralAccountAddress, address tokenAddress)
         ERC20TokenHolder(tokenAddress)
-        AlgoSystemRole()
+        IntelliSystemRole()
         IntelliCoreTeamRole()
-        AlgoSupervisorRole()
+        IntelliSupervisorRole()
         public {
         
         require(category >= 0 && category <= 5);

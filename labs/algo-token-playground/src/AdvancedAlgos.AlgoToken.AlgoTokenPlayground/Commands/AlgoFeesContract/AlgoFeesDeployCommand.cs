@@ -8,17 +8,17 @@ using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoFeesContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliFeesContract
 {
-    public class AlgoFeesDeployCommand : DeployContractCommand
+    public class IntelliFeesDeployCommand : DeployContractCommand
     {
-        public override string DefaultName => "AlgoFees";
+        public override string DefaultName => "IntelliFees";
 
         public string TokenAddress { get; set; }
 
         protected override async Task<TransactionReceipt> DeployContractAsync(RuntimeContext context, Web3 web3)
         {
-            var algoFees = new AlgoFees(web3, context.GasPriceProvider);
+            var algoFees = new IntelliFees(web3, context.GasPriceProvider);
             return await algoFees.DeployAsync(context.ResolveContractReference(TokenAddress));
         }
     }

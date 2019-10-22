@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoFeesContract;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliFeesContract;
 using Sprache;
 
 namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
-    public static class AlgoFeesParsers
+    public static class IntelliFeesParsers
     {
         public static void Register()
         {
             (from command in CommonParsers.Token("deploy-algofees")
              from tokenAddress in CommonParsers.StringValue
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
-             select new AlgoFeesDeployCommand
+             select new IntelliFeesDeployCommand
              {
                  Name = name.GetOrDefault(),
                  TokenAddress = tokenAddress
@@ -21,7 +21,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 
             (from contractReference in CommonParsers.Invoke("algofees-registerminer")
              from minerAddress in CommonParsers.StringValue
-             select new AlgoFeesRegisterMinerCommand
+             select new IntelliFeesRegisterMinerCommand
              {
                  ContractReference = contractReference,
                  MinerAddress = minerAddress
@@ -29,20 +29,20 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 
             (from contractReference in CommonParsers.Invoke("algofees-unregisterminer")
              from minerAddress in CommonParsers.StringValue
-             select new AlgoFeesUnregisterMinerCommand
+             select new IntelliFeesUnregisterMinerCommand
              {
                  ContractReference = contractReference,
                  MinerAddress = minerAddress
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algofees-mine")
-             select new AlgoFeesMineCommand
+             select new IntelliFeesMineCommand
              {
                  ContractReference = contractReference
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algofees-terminate")
-             select new AlgoFeesTerminateCommand
+             select new IntelliFeesTerminateCommand
              {
                  ContractReference = contractReference
              }).Register();

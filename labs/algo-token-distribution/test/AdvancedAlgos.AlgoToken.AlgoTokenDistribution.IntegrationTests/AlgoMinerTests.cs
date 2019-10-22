@@ -38,9 +38,9 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             await token.DeployAsync();
 
             // Create the pools to transfer the proper number of tokens to the miners...
-            var pool1 = new AlgoPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var pool1 = new IntelliPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await pool1.DeployAsync(0, token.ContractAddress);
-            var pool2 = new AlgoPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var pool2 = new IntelliPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await pool2.DeployAsync(1, token.ContractAddress);
 
             // Transfer some tokens to the pools...

@@ -5,10 +5,10 @@ import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
 import "./IIntelliMiner.sol";
 import "./ERC20TokenHolder.sol";
-import "./AlgoSystemRole.sol";
+import "./IntelliSystemRole.sol";
 import "./IntelliCoreTeamRole.sol";
 
-contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
+contract IntelliFees is ERC20TokenHolder, IntelliSystemRole, IntelliCoreTeamRole {
     using SafeERC20 for IERC20;
 
     uint256 private constant CAT_0_VALUE_PROPORTION = 1;
@@ -23,7 +23,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
 
     constructor(address tokenAddress)
         ERC20TokenHolder(tokenAddress)
-        AlgoSystemRole()
+        IntelliSystemRole()
         IntelliCoreTeamRole()
         public {
         _miners.push(address(0)); // Reserved as a marker for unregistered miner.
@@ -34,9 +34,9 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
         require(_minersByAddress[minerAddress] == 0);
 
         IIntelliMiner algoMiner = IIntelliMiner(minerAddress);
-        
+
         require(algoMiner.isIntelliMiner());
-        
+
         uint8 minerCategory = algoMiner.getCategory();
 
         require(minerCategory >= 0 && minerCategory <= 5);
@@ -49,16 +49,16 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
         require(_miners.length > 1);
 
         if(_miners.length == 2) {
-        
+
             // Just remove the only registered miner...
             delete _miners[1];
             _miners.length = 1;
             delete _minersByAddress[minerAddress];
-        
+
         } else {
-            
+
             if(_minersByAddress[minerAddress] != _miners.length) {
-                // Move the latest miner to the gap... 
+                // Move the latest miner to the gap...
                 _miners[_minersByAddress[minerAddress]] = _miners[_miners.length - 1];
             }
 
@@ -97,7 +97,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
                 miners[4]++;
             } else if(minerCategory == 5) {
                 miners[5]++;
-            }            
+            }
         }
 
         // Calculate the fee to pay per miner according to its category...
@@ -107,7 +107,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
             CAT_3_VALUE_PROPORTION * miners[3] +
             CAT_4_VALUE_PROPORTION * miners[4] +
             CAT_5_VALUE_PROPORTION * miners[5];
-        
+
         uint256[6] memory feePerMiner;
 
         feePerMiner[0] = currentFeesBalance * CAT_0_VALUE_PROPORTION / totalProportion;

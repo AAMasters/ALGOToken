@@ -1,6 +1,6 @@
 pragma solidity 0.4.24;
 
-contract AlgoCommon {
+contract IntelliCommon {
 
     uint256 internal constant TOKEN_FACTOR = 10 ** uint256(18);
     uint256 internal constant CAT_0_VALUE = 100000 * TOKEN_FACTOR;

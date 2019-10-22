@@ -9,15 +9,15 @@ using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoFeesContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliFeesContract
 {
-    public class AlgoFeesUnregisterMinerCommand : EthInvokeTransactionalFunctionCommand
+    public class IntelliFeesUnregisterMinerCommand : EthInvokeTransactionalFunctionCommand
     {
         public string MinerAddress { get; set; }
 
         protected override async Task<TransactionReceipt> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoFees = new AlgoFees(contractAddress, web3, context.GasPriceProvider);
+            var algoFees = new IntelliFees(contractAddress, web3, context.GasPriceProvider);
 
             return await algoFees.UnregisterMinerAsync(context.ResolveContractReference(MinerAddress));
         }

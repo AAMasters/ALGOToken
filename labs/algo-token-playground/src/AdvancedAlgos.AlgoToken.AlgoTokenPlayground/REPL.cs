@@ -26,8 +26,8 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground
             AccountManagementParsers.Register();
             ContractManagementParsers.Register();
             IntelliTokenParsers.Register();
-            AlgoPoolParsers.Register();
-            AlgoFeesParsers.Register();
+            IntelliPoolParsers.Register();
+            IntelliFeesParsers.Register();
             IntelliMinerParsers.Register();
         }
 

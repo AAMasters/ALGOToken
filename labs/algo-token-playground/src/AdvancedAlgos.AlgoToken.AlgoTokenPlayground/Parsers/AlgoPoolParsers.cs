@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoPoolContract;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliPoolContract;
 using Sprache;
 
 namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
-    public static class AlgoPoolParsers
+    public static class IntelliPoolParsers
     {
         public static void Register()
         {
@@ -14,7 +14,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
              from poolType in CommonParsers.ByteValue
              from tokenAddress in CommonParsers.StringValue
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
-             select new AlgoPoolDeployCommand
+             select new IntelliPoolDeployCommand
              {
                  Name = name.GetOrDefault(),
                  PoolType = poolType,
@@ -23,14 +23,14 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 
             (from contractReference in CommonParsers.Invoke("algopool-transfertominer")
              from minerAddress in CommonParsers.StringValue
-             select new AlgoPoolTransferToMinerCommand
+             select new IntelliPoolTransferToMinerCommand
              {
                  ContractReference = contractReference,
                  MinerAddress = minerAddress
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algopool-terminate")
-             select new AlgoPoolTerminateCommand
+             select new IntelliPoolTerminateCommand
              {
                  ContractReference = contractReference
              }).Register();

@@ -12,7 +12,7 @@ using Xunit;
 
 namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
 {
-    public class AlgoFeesTests
+    public class IntelliFeesTests
     {
         [Fact]
         public async Task MinerRegistrationTest()
@@ -32,7 +32,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             await token.DeployAsync();
 
             // Create a fees...
-            var fees1 = new AlgoFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var fees1 = new IntelliFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await fees1.DeployAsync(token.ContractAddress);
 
             // Create some miners...
@@ -118,7 +118,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             await token.DeployAsync();
 
             // Create a fees...
-            var fees1 = new AlgoFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var fees1 = new IntelliFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await fees1.DeployAsync(token.ContractAddress);
 
             // Register the system account...
@@ -158,7 +158,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
 
             // Mine the fees...
             {
-                var fees = new AlgoFees(fees1.ContractAddress, EthNetwork.Instance.GetWeb3(systemAccount), EthNetwork.Instance.GasPriceProvider);
+                var fees = new IntelliFees(fees1.ContractAddress, EthNetwork.Instance.GetWeb3(systemAccount), EthNetwork.Instance.GasPriceProvider);
                 await fees.MineAsync();
             }
 
@@ -199,7 +199,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             var tokenOwnerAccountBalance = await token.BalanceOfAsync(tokenOwnerAccount.Address);
 
             // Create a fees...
-            var fees1 = new AlgoFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var fees1 = new IntelliFees(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await fees1.DeployAsync(token.ContractAddress);
 
             // Transfer some tokens to the fees...

@@ -4,11 +4,11 @@ import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
 import "./IIntelliMiner.sol";
-import "./AlgoCommon.sol";
+import "./IntelliCommon.sol";
 import "./ERC20TokenHolder.sol";
 import "./IntelliCoreTeamRole.sol";
 
-contract AlgoPool is AlgoCommon, ERC20TokenHolder, IntelliCoreTeamRole {
+contract IntelliPool is IntelliCommon, ERC20TokenHolder, IntelliCoreTeamRole {
     using SafeERC20 for IERC20;
 
     enum PoolType {

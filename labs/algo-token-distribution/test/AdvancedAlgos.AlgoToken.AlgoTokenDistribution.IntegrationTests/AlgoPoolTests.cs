@@ -12,7 +12,7 @@ using Xunit;
 
 namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
 {
-    public class AlgoPoolTests
+    public class IntelliPoolTests
     {
         [Fact]
         public async Task MinerPoolTransferToMinerTest()
@@ -34,7 +34,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             await token.DeployAsync();
 
             // Create a pool...
-            var pool1 = new AlgoPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var pool1 = new IntelliPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await pool1.DeployAsync(0, token.ContractAddress);
 
             // Transfer some tokens to the pool...
@@ -89,7 +89,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             await token.DeployAsync();
 
             // Create a pool...
-            var pool1 = new AlgoPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var pool1 = new IntelliPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await pool1.DeployAsync(1, token.ContractAddress);
 
             // Transfer some tokens to the pool...
@@ -145,7 +145,7 @@ namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
             var tokenOwnerAccountBalance = await token.BalanceOfAsync(tokenOwnerAccount.Address);
 
             // Create a pool...
-            var pool1 = new AlgoPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+            var pool1 = new IntelliPool(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
             await pool1.DeployAsync(0, token.ContractAddress);
 
             // Transfer some tokens to the pool...

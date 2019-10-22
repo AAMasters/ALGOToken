@@ -9,7 +9,7 @@ contract IntelliTokenV1 is ERC20, ERC20Detailed, ERC20Pausable {
 
     constructor()
         ERC20Pausable()
-        ERC20Detailed("Algos", "ALGO", 18)
+        ERC20Detailed("Intellis", "INTELLI", 18)
         public
     {
         _mint(msg.sender, INITIAL_SUPPLY);

@@ -191,15 +191,15 @@ Unpauses the token. All transactions will be resumed.
 
 >Example: `token.algotoken-unpause`
 
-### AlgoPool
+### IntelliPool
 
-The following commands are supported for the `AlgoPool` contract:
+The following commands are supported for the `IntelliPool` contract:
 
 #### deploy-algopool
 
 `deploy-algopool <poolType> <tokenAddress> [-n <contract_name>]`
 
-Creates a new instance of the `AlgoPool` contract.
+Creates a new instance of the `IntelliPool` contract.
 * `poolType`: the type of pool (uint8: 0 = MinerPool, 1 = ReferralPool)
 * `tokenAddress`: the address of the IntelliToken contract
 
@@ -209,7 +209,7 @@ Creates a new instance of the `AlgoPool` contract.
 
 `<contract>.algopool-transfertominer <minerAddress>`
 
-Transfer tokens from the AlgoPool balance to the IntelliMiner balance. The amount of tokens to be transfered is determined by the IntelliMiner category (see the specification document).
+Transfer tokens from the IntelliPool balance to the IntelliMiner balance. The amount of tokens to be transfered is determined by the IntelliMiner category (see the specification document).
 * `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `dev_pool.algopool-transfertominer miner_1`
@@ -230,7 +230,7 @@ The following commands are supported for the `IntelliMiner` contract:
 
 `deploy-algominer <minerType> <category> <minerAccountAddress> <referralAccountAddress> <tokenAddress> [-n <contract_name>]`
 
-Creates a new instance of the `AlgoPool` contract.
+Creates a new instance of the `IntelliPool` contract.
 * `minerType`: the type of miner (uint8: 0 = PoolBased, 1 = NonPoolBased)
 * `category`: the category of miner (uint8: valid from 0 to 5)
 * `minerAccountAddress`: the address of the miner's owner
@@ -357,15 +357,15 @@ Adds the specified account to the "Supervisor" role.
 
 >Example: `miner_1.algominer-addsupervisor 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
 
-### AlgoFees
+### IntelliFees
 
-The following commands are supported for the `AlgoFees` contract:
+The following commands are supported for the `IntelliFees` contract:
 
 #### deploy-algofees
 
 `deploy-algofees <tokenAddress> [-n <contract_name>]`
 
-Creates a new instance of the `AlgoFees` contract.
+Creates a new instance of the `IntelliFees` contract.
 * `tokenAddress`: the address of the IntelliToken contract
 
 >Example: `deploy-algofees token -n fees1`
@@ -374,7 +374,7 @@ Creates a new instance of the `AlgoFees` contract.
 
 `<contract>.algofees-registerminer <minerAddress>`
 
-Registers a miner with the AlgoFees.
+Registers a miner with the IntelliFees.
 * `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `fees1.algofees-registerminer miner_0`
@@ -383,7 +383,7 @@ Registers a miner with the AlgoFees.
 
 `<contract>.algofees-unregisterminer <minerAddress>`
 
-Unregisters a miner from the AlgoFees.
+Unregisters a miner from the IntelliFees.
 * `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `fees1.algofees-unregisterminer miner_0`
@@ -392,7 +392,7 @@ Unregisters a miner from the AlgoFees.
 
 `<contract>.algofees-mine`
 
-This operation is executed by the system to request a payment from the AlgoFees to registered miners. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
+This operation is executed by the system to request a payment from the IntelliFees to registered miners. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
 
 >Example: `fees1.algofees-mine`
 
