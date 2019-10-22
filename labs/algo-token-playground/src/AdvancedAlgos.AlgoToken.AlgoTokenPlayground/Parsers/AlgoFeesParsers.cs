@@ -10,7 +10,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
     {
         public static void Register()
         {
-            (from command in CommonParsers.Token("deploy-algofees")
+            (from command in CommonParsers.Token("deploy-intellifees")
              from tokenAddress in CommonParsers.StringValue
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
              select new IntelliFeesDeployCommand
@@ -19,7 +19,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  TokenAddress = tokenAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algofees-registerminer")
+            (from contractReference in CommonParsers.Invoke("intellifees-registerminer")
              from minerAddress in CommonParsers.StringValue
              select new IntelliFeesRegisterMinerCommand
              {
@@ -27,7 +27,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  MinerAddress = minerAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algofees-unregisterminer")
+            (from contractReference in CommonParsers.Invoke("intellifees-unregisterminer")
              from minerAddress in CommonParsers.StringValue
              select new IntelliFeesUnregisterMinerCommand
              {
@@ -35,13 +35,13 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  MinerAddress = minerAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algofees-mine")
+            (from contractReference in CommonParsers.Invoke("intellifees-mine")
              select new IntelliFeesMineCommand
              {
                  ContractReference = contractReference
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algofees-terminate")
+            (from contractReference in CommonParsers.Invoke("intellifees-terminate")
              select new IntelliFeesTerminateCommand
              {
                  ContractReference = contractReference

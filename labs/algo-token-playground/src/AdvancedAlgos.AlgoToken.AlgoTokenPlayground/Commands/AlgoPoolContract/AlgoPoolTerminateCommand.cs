@@ -15,9 +15,9 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliPoolCon
     {
         protected override async Task<TransactionReceipt> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoPool = new IntelliPool(contractAddress, web3, context.GasPriceProvider);
+            var intellipool = new IntelliPool(contractAddress, web3, context.GasPriceProvider);
 
-            return await algoPool.TerminateAsync();
+            return await intellipool.TerminateAsync();
         }
     }
 }

@@ -3,25 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliErc20Token", "algo-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj", "{96BC465D-507E-43BC-A71E-1B4F7799AB19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliErc20Token", "intelli-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj", "{96BC465D-507E-43BC-A71E-1B4F7799AB19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests", "algo-erc20-token\test\Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests\Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests.csproj", "{B569A2AD-A0E7-4623-AB3A-9BB49938CBE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests", "intelli-erc20-token\test\Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests\Superalgos.IntelliToken.IntelliErc20Token.IntegrationTests.csproj", "{B569A2AD-A0E7-4623-AB3A-9BB49938CBE6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "algo-erc20-token", "algo-erc20-token", "{921A277C-0B10-4186-A814-786F903B4E2C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "intelli-erc20-token", "intelli-erc20-token", "{921A277C-0B10-4186-A814-786F903B4E2C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "algo-token-distribution", "algo-token-distribution", "{4EDC9FAE-176A-4995-B977-F6D2B735F616}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "intelli-token-distribution", "intelli-token-distribution", "{4EDC9FAE-176A-4995-B977-F6D2B735F616}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "framework", "framework", "{9A083680-1F9C-4A8C-8FB2-A623DD333AEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliTokenDistribution", "algo-token-distribution\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj", "{6D1C63E9-A2F1-4084-B8E4-499B41341023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliTokenDistribution", "intelli-token-distribution\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj", "{6D1C63E9-A2F1-4084-B8E4-499B41341023}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests", "algo-token-distribution\test\Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests\Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests.csproj", "{CF2E35E6-EFC5-445F-AB17-BEC7E3039C41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests", "intelli-token-distribution\test\Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests\Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests.csproj", "{CF2E35E6-EFC5-445F-AB17-BEC7E3039C41}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest", "framework\src\Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest\Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest.csproj", "{127474F7-81E8-4153-AEE0-A2049D75F77D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Superalgos.IntelliToken.Framework.Ethereum", "framework\src\Superalgos.IntelliToken.Framework.Ethereum\Superalgos.IntelliToken.Framework.Ethereum.csproj", "{B05DC461-E82E-430B-A66D-9C0C9C9F9C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superalgos.IntelliToken.IntelliTokenPlayground", "algo-token-playground\src\Superalgos.IntelliToken.IntelliTokenPlayground\Superalgos.IntelliToken.IntelliTokenPlayground.csproj", "{42569CB0-DA27-4BAE-A657-3617D1644AD5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superalgos.IntelliToken.IntelliTokenPlayground", "intelli-token-playground\src\Superalgos.IntelliToken.IntelliTokenPlayground\Superalgos.IntelliToken.IntelliTokenPlayground.csproj", "{42569CB0-DA27-4BAE-A657-3617D1644AD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

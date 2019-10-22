@@ -29,11 +29,11 @@ contract IntelliPool is IntelliCommon, ERC20TokenHolder, IntelliCoreTeamRole {
     function transferToMiner(address minerAddress) public notTerminated onlyCoreTeam {
         require(!_fundedMiners[minerAddress]);
 
-        IIntelliMiner algoMiner = IIntelliMiner(minerAddress);
+        IIntelliMiner intelliMiner = IIntelliMiner(minerAddress);
         
-        require(algoMiner.isIntelliMiner());
+        require(intelliMiner.isIntelliMiner());
         
-        uint8 minerCategory = algoMiner.getCategory();
+        uint8 minerCategory = intelliMiner.getCategory();
 
         require(minerCategory >= 0 && minerCategory <= 5);
 

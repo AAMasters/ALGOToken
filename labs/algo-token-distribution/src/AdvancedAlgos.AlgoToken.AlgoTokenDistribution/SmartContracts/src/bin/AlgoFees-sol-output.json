@@ -1,6 +1,6 @@
 {
     "contracts": {
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol": {
             "IntelliCoreTeamRole": {
                 "abi": [
                     {
@@ -75,7 +75,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol": {
             "IntelliFees": {
                 "abi": [
                     {
@@ -299,13 +299,13 @@
                         "unregisterMiner(address)": "81f909f3"
                     }
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"terminate\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"registerMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isSystem\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getMinerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addSystem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"unregisterMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"mine\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getMinerCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceSystem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol\":\"IntelliFees\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol\":{\"keccak256\":\"0xe6fc9b275c7a4c4f00337d2a388cc97a64ad82e5a23c24c59a4593e85a05b08a\",\"urls\":[\"bzzr://40c7674b2a3543a2b2606c70df215a876bd1a064d249e658d2bbd6fe25969c2e\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol\":{\"keccak256\":\"0x6c460b19697e0bbddcd6e319f2e8b5be033832eaf4d00e01a7ca7c95a514dd8c\",\"urls\":[\"bzzr://b99c4032a4291fdae1b1b51bee962ebfdc45ca26504858e297e8e85c20154308\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol\":{\"keccak256\":\"0x6fffe504e6805d95ca42269cc995a3de9401a12bc037068b056c186ce8569d8d\",\"urls\":[\"bzzr://a0923a2d2b1e4992f552ce49638b19d6d8328950c1d5dc1395f0d625daf21c68\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol\":{\"keccak256\":\"0x71adbf7f060599239b7a981594e43dc8fbe8597fd2853b6fe9e70ff39883d73a\",\"urls\":[\"bzzr://70691c1638cdc0f744f8c5b5a94e4f857ba40ad053816cfbd15e13ed41a3bc66\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol\":{\"keccak256\":\"0x1b1359f75f7d5a943ab06caea36824f0a6448c5ffa1a32ed7e26cee81cf3683a\",\"urls\":[\"bzzr://26177d59d0c84fa4e632538fbd44802f219e6501b0828533badcf80701cea0f5\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol\":{\"keccak256\":\"0x29a8fa3204dbd204355714601ce21d7d717a586a4de21009d8f2a3ca7981963f\",\"urls\":[\"bzzr://55d9b762620cef1e6f7b11a26d6cc123f5b608a59e0d36f9bc0a1e8ff0ff5c42\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"terminate\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"registerMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isSystem\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"getMinerByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addSystem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"minerAddress\",\"type\":\"address\"}],\"name\":\"unregisterMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"mine\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getMinerCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceSystem\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol\":\"IntelliFees\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol\":{\"keccak256\":\"0xe6fc9b275c7a4c4f00337d2a388cc97a64ad82e5a23c24c59a4593e85a05b08a\",\"urls\":[\"bzzr://40c7674b2a3543a2b2606c70df215a876bd1a064d249e658d2bbd6fe25969c2e\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol\":{\"keccak256\":\"0x6c460b19697e0bbddcd6e319f2e8b5be033832eaf4d00e01a7ca7c95a514dd8c\",\"urls\":[\"bzzr://b99c4032a4291fdae1b1b51bee962ebfdc45ca26504858e297e8e85c20154308\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol\":{\"keccak256\":\"0x6fffe504e6805d95ca42269cc995a3de9401a12bc037068b056c186ce8569d8d\",\"urls\":[\"bzzr://a0923a2d2b1e4992f552ce49638b19d6d8328950c1d5dc1395f0d625daf21c68\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol\":{\"keccak256\":\"0x71adbf7f060599239b7a981594e43dc8fbe8597fd2853b6fe9e70ff39883d73a\",\"urls\":[\"bzzr://70691c1638cdc0f744f8c5b5a94e4f857ba40ad053816cfbd15e13ed41a3bc66\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol\":{\"keccak256\":\"0x1b1359f75f7d5a943ab06caea36824f0a6448c5ffa1a32ed7e26cee81cf3683a\",\"urls\":[\"bzzr://26177d59d0c84fa4e632538fbd44802f219e6501b0828533badcf80701cea0f5\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol\":{\"keccak256\":\"0x29a8fa3204dbd204355714601ce21d7d717a586a4de21009d8f2a3ca7981963f\",\"urls\":[\"bzzr://55d9b762620cef1e6f7b11a26d6cc123f5b608a59e0d36f9bc0a1e8ff0ff5c42\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol": {
             "IntelliSystemRole": {
                 "abi": [
                     {
@@ -380,7 +380,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol": {
             "ERC20TokenHolder": {
                 "abi": [
                     {
@@ -414,7 +414,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol": {
             "IIntelliMiner": {
                 "abi": [
                     {
@@ -528,7 +528,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol": {
             "Terminable": {
                 "abi": [
                     {
@@ -557,7 +557,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "Roles": {
                 "abi": [],
                 "devdoc": {
@@ -585,13 +585,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "SafeMath": {
                 "abi": [],
                 "devdoc": {
@@ -621,13 +621,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "IERC20": {
                 "abi": [
                     {
@@ -831,7 +831,7 @@
                 }
             }
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "SafeERC20": {
                 "abi": [],
                 "devdoc": {
@@ -861,7 +861,7 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
@@ -869,9 +869,9 @@
         }
     },
     "sources": {
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol",
                 "exportedSymbols": {
                     "IntelliCoreTeamRole": [
                         86
@@ -892,8 +892,8 @@
                         "src": "0:24:0"
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                         "id": 2,
                         "nodeType": "ImportDirective",
                         "scope": 87,
@@ -1886,9 +1886,9 @@
             },
             "id": 0
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliFees.sol",
                 "exportedSymbols": {
                     "IntelliFees": [
                         606
@@ -1908,8 +1908,8 @@
                         "src": "0:23:1"
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "id": 89,
                         "nodeType": "ImportDirective",
                         "scope": 607,
@@ -1919,8 +1919,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                         "id": 90,
                         "nodeType": "ImportDirective",
                         "scope": 607,
@@ -1930,7 +1930,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol",
                         "file": "./IIntelliMiner.sol",
                         "id": 91,
                         "nodeType": "ImportDirective",
@@ -1941,7 +1941,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol",
                         "file": "./ERC20TokenHolder.sol",
                         "id": 92,
                         "nodeType": "ImportDirective",
@@ -1952,7 +1952,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol",
                         "file": "./IntelliSystemRole.sol",
                         "id": 93,
                         "nodeType": "ImportDirective",
@@ -1963,7 +1963,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliCoreTeamRole.sol",
                         "file": "./IntelliCoreTeamRole.sol",
                         "id": 94,
                         "nodeType": "ImportDirective",
@@ -2910,7 +2910,7 @@
                                                 {
                                                     "constant": false,
                                                     "id": 174,
-                                                    "name": "algoMiner",
+                                                    "name": "intelliMiner",
                                                     "nodeType": "VariableDeclaration",
                                                     "scope": 215,
                                                     "src": "1549:20:1",
@@ -3001,7 +3001,7 @@
                                                             "expression": {
                                                                 "argumentTypes": null,
                                                                 "id": 180,
-                                                                "name": "algoMiner",
+                                                                "name": "intelliMiner",
                                                                 "nodeType": "Identifier",
                                                                 "overloadedDeclarations": [],
                                                                 "referencedDeclaration": 174,
@@ -3120,7 +3120,7 @@
                                                     "expression": {
                                                         "argumentTypes": null,
                                                         "id": 187,
-                                                        "name": "algoMiner",
+                                                        "name": "intelliMiner",
                                                         "nodeType": "Identifier",
                                                         "overloadedDeclarations": [],
                                                         "referencedDeclaration": 174,
@@ -4999,7 +4999,7 @@
                                                             {
                                                                 "constant": false,
                                                                 "id": 341,
-                                                                "name": "algoMiner",
+                                                                "name": "intelliMiner",
                                                                 "nodeType": "VariableDeclaration",
                                                                 "scope": 571,
                                                                 "src": "3038:20:1",
@@ -5125,7 +5125,7 @@
                                                                     "expression": {
                                                                         "argumentTypes": null,
                                                                         "id": 348,
-                                                                        "name": "algoMiner",
+                                                                        "name": "intelliMiner",
                                                                         "nodeType": "Identifier",
                                                                         "overloadedDeclarations": [],
                                                                         "referencedDeclaration": 341,
@@ -5219,7 +5219,7 @@
                                                                 "expression": {
                                                                     "argumentTypes": null,
                                                                     "id": 356,
-                                                                    "name": "algoMiner",
+                                                                    "name": "intelliMiner",
                                                                     "nodeType": "Identifier",
                                                                     "overloadedDeclarations": [],
                                                                     "referencedDeclaration": 341,
@@ -7708,7 +7708,7 @@
                                                             "leftHandSide": {
                                                                 "argumentTypes": null,
                                                                 "id": 537,
-                                                                "name": "algoMiner",
+                                                                "name": "intelliMiner",
                                                                 "nodeType": "Identifier",
                                                                 "overloadedDeclarations": [],
                                                                 "referencedDeclaration": 341,
@@ -7826,7 +7826,7 @@
                                                                     "expression": {
                                                                         "argumentTypes": null,
                                                                         "id": 545,
-                                                                        "name": "algoMiner",
+                                                                        "name": "intelliMiner",
                                                                         "nodeType": "Identifier",
                                                                         "overloadedDeclarations": [],
                                                                         "referencedDeclaration": 341,
@@ -7910,7 +7910,7 @@
                                                                     "expression": {
                                                                         "argumentTypes": null,
                                                                         "id": 552,
-                                                                        "name": "algoMiner",
+                                                                        "name": "intelliMiner",
                                                                         "nodeType": "Identifier",
                                                                         "overloadedDeclarations": [],
                                                                         "referencedDeclaration": 341,
@@ -7970,7 +7970,7 @@
                                                                         "expression": {
                                                                             "argumentTypes": null,
                                                                             "id": 560,
-                                                                            "name": "algoMiner",
+                                                                            "name": "intelliMiner",
                                                                             "nodeType": "Identifier",
                                                                             "overloadedDeclarations": [],
                                                                             "referencedDeclaration": 341,
@@ -8732,9 +8732,9 @@
             },
             "id": 1
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IntelliSystemRole.sol",
                 "exportedSymbols": {
                     "IntelliSystemRole": [
                         693
@@ -8755,8 +8755,8 @@
                         "src": "0:24:2"
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                         "id": 609,
                         "nodeType": "ImportDirective",
                         "scope": 694,
@@ -9749,9 +9749,9 @@
             },
             "id": 2
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/ERC20TokenHolder.sol",
                 "exportedSymbols": {
                     "ERC20TokenHolder": [
                         750
@@ -9771,8 +9771,8 @@
                         "src": "0:23:3"
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "id": 696,
                         "nodeType": "ImportDirective",
                         "scope": 751,
@@ -9782,8 +9782,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
-                        "file": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "file": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                         "id": 697,
                         "nodeType": "ImportDirective",
                         "scope": 751,
@@ -9793,7 +9793,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol",
                         "file": "./Terminable.sol",
                         "id": 698,
                         "nodeType": "ImportDirective",
@@ -10443,9 +10443,9 @@
             },
             "id": 3
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/IIntelliMiner.sol",
                 "exportedSymbols": {
                     "IIntelliMiner": [
                         783
@@ -10822,9 +10822,9 @@
             },
             "id": 4
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/Terminable.sol",
                 "exportedSymbols": {
                     "Terminable": [
                         820
@@ -11250,9 +11250,9 @@
             },
             "id": 5
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                 "exportedSymbols": {
                     "Roles": [
                         914
@@ -12529,9 +12529,9 @@
             },
             "id": 6
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                 "exportedSymbols": {
                     "SafeMath": [
                         1042
@@ -14173,9 +14173,9 @@
             },
             "id": 7
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                 "exportedSymbols": {
                     "IERC20": [
                         1111
@@ -15010,9 +15010,9 @@
             },
             "id": 8
         },
-        "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                 "exportedSymbols": {
                     "SafeERC20": [
                         1255
@@ -15033,7 +15033,7 @@
                         "src": "0:24:9"
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "file": "./IERC20.sol",
                         "id": 1114,
                         "nodeType": "ImportDirective",
@@ -15044,7 +15044,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/IntelliToken/labs/algo-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                        "absolutePath": "d:/GitHub/IntelliToken/labs/intelli-token-distribution/src/Superalgos.IntelliToken.IntelliTokenDistribution/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                         "file": "../../math/SafeMath.sol",
                         "id": 1115,
                         "nodeType": "ImportDirective",

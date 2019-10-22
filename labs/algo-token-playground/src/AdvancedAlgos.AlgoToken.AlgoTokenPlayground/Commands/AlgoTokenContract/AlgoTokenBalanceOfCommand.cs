@@ -17,8 +17,8 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliTokenCo
 
         protected override async Task<object> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoToken = new IntelliTokenV1(contractAddress, web3, context.GasPriceProvider);
-            return await algoToken.BalanceOfAsync(context.ResolveAccountOrContractReference(OwnerAddress));
+            var intellitoken = new IntelliTokenV1(contractAddress, web3, context.GasPriceProvider);
+            return await intellitoken.BalanceOfAsync(context.ResolveAccountOrContractReference(OwnerAddress));
         }
     }
 }

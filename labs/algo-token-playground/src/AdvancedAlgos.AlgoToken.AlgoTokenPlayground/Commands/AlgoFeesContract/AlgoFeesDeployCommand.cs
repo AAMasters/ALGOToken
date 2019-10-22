@@ -18,8 +18,8 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliFeesCon
 
         protected override async Task<TransactionReceipt> DeployContractAsync(RuntimeContext context, Web3 web3)
         {
-            var algoFees = new IntelliFees(web3, context.GasPriceProvider);
-            return await algoFees.DeployAsync(context.ResolveContractReference(TokenAddress));
+            var intellifees = new IntelliFees(web3, context.GasPriceProvider);
+            return await intellifees.DeployAsync(context.ResolveContractReference(TokenAddress));
         }
     }
 }

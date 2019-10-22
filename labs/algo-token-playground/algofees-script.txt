@@ -17,45 +17,45 @@ eth-transfer miner_2_account 1eth
 eth-transfer miner_3_account 1eth
 eth-transfer miner_4_account 1eth
 eth-transfer miner_5_account 1eth
-deploy-algotoken -n token
-deploy-algominer 1 0 miner_0_account ref_0_account token -n miner_0
-deploy-algominer 1 1 miner_1_account ref_1_account token -n miner_1
-deploy-algominer 1 2 miner_2_account ref_2_account token -n miner_2
-deploy-algominer 1 3 miner_3_account ref_3_account token -n miner_3
-deploy-algominer 1 4 miner_4_account ref_4_account token -n miner_4
-deploy-algominer 1 5 miner_5_account ref_5_account token -n miner_5
-miner_0.algominer-activateminer
-miner_1.algominer-activateminer
-miner_2.algominer-activateminer
-miner_3.algominer-activateminer
-miner_4.algominer-activateminer
-miner_5.algominer-activateminer
+deploy-intellitoken -n token
+deploy-intelliMiner 1 0 miner_0_account ref_0_account token -n miner_0
+deploy-intelliMiner 1 1 miner_1_account ref_1_account token -n miner_1
+deploy-intelliMiner 1 2 miner_2_account ref_2_account token -n miner_2
+deploy-intelliMiner 1 3 miner_3_account ref_3_account token -n miner_3
+deploy-intelliMiner 1 4 miner_4_account ref_4_account token -n miner_4
+deploy-intelliMiner 1 5 miner_5_account ref_5_account token -n miner_5
+miner_0.intelliMiner-activateminer
+miner_1.intelliMiner-activateminer
+miner_2.intelliMiner-activateminer
+miner_3.intelliMiner-activateminer
+miner_4.intelliMiner-activateminer
+miner_5.intelliMiner-activateminer
 set-account miner_0_account
-miner_0.algominer-startmining
+miner_0.intelliMiner-startmining
 set-account miner_1_account
-miner_1.algominer-startmining
+miner_1.intelliMiner-startmining
 set-account miner_2_account
-miner_2.algominer-startmining
+miner_2.intelliMiner-startmining
 set-account miner_3_account
-miner_3.algominer-startmining
+miner_3.intelliMiner-startmining
 set-account miner_4_account
-miner_4.algominer-startmining
+miner_4.intelliMiner-startmining
 set-account miner_5_account
-miner_5.algominer-startmining
+miner_5.intelliMiner-startmining
 set-account prefunded
-deploy-algofees token -n fees1
-token.algotoken-transfer fees1 151eth
-token.algotoken-balanceof fees1
-fees1.algofees-registerminer miner_0
-fees1.algofees-registerminer miner_1
-fees1.algofees-registerminer miner_2
-fees1.algofees-registerminer miner_3
-fees1.algofees-registerminer miner_4
-fees1.algofees-registerminer miner_5
-fees1.algofees-mine
-token.algotoken-balanceof miner_0_account
-token.algotoken-balanceof miner_1_account
-token.algotoken-balanceof miner_2_account
-token.algotoken-balanceof miner_3_account
-token.algotoken-balanceof miner_4_account
-token.algotoken-balanceof miner_5_account
+deploy-intellifees token -n fees1
+token.intellitoken-transfer fees1 151eth
+token.intellitoken-balanceof fees1
+fees1.intellifees-registerminer miner_0
+fees1.intellifees-registerminer miner_1
+fees1.intellifees-registerminer miner_2
+fees1.intellifees-registerminer miner_3
+fees1.intellifees-registerminer miner_4
+fees1.intellifees-registerminer miner_5
+fees1.intellifees-mine
+token.intellitoken-balanceof miner_0_account
+token.intellitoken-balanceof miner_1_account
+token.intellitoken-balanceof miner_2_account
+token.intellitoken-balanceof miner_3_account
+token.intellitoken-balanceof miner_4_account
+token.intellitoken-balanceof miner_5_account

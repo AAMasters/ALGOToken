@@ -16,8 +16,8 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliTokenCo
 
         protected override async Task<TransactionReceipt> DeployContractAsync(RuntimeContext context, Web3 web3)
         {
-            var algoToken = new IntelliTokenV1(web3, context.GasPriceProvider);
-            return await algoToken.DeployAsync();
+            var intellitoken = new IntelliTokenV1(web3, context.GasPriceProvider);
+            return await intellitoken.DeployAsync();
         }
     }
 }

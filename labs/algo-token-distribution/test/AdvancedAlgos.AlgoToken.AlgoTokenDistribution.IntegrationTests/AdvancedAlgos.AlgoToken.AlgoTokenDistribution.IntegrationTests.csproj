@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\algo-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj" />
+    <ProjectReference Include="..\..\..\intelli-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj" />
     <ProjectReference Include="..\..\..\framework\src\Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest\Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest.csproj" />
     <ProjectReference Include="..\..\..\framework\src\Superalgos.IntelliToken.Framework.Ethereum\Superalgos.IntelliToken.Framework.Ethereum.csproj" />
     <ProjectReference Include="..\..\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj" />

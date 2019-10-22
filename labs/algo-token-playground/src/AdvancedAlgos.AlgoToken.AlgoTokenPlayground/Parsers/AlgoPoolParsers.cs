@@ -10,7 +10,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
     {
         public static void Register()
         {
-            (from command in CommonParsers.Token("deploy-algopool")
+            (from command in CommonParsers.Token("deploy-intellipool")
              from poolType in CommonParsers.ByteValue
              from tokenAddress in CommonParsers.StringValue
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
@@ -21,7 +21,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  TokenAddress = tokenAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algopool-transfertominer")
+            (from contractReference in CommonParsers.Invoke("intellipool-transfertominer")
              from minerAddress in CommonParsers.StringValue
              select new IntelliPoolTransferToMinerCommand
              {
@@ -29,7 +29,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  MinerAddress = minerAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algopool-terminate")
+            (from contractReference in CommonParsers.Invoke("intellipool-terminate")
              select new IntelliPoolTerminateCommand
              {
                  ContractReference = contractReference

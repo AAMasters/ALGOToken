@@ -33,11 +33,11 @@ contract IntelliFees is ERC20TokenHolder, IntelliSystemRole, IntelliCoreTeamRole
         require(_miners.length < 1000);
         require(_minersByAddress[minerAddress] == 0);
 
-        IIntelliMiner algoMiner = IIntelliMiner(minerAddress);
+        IIntelliMiner intelliMiner = IIntelliMiner(minerAddress);
 
-        require(algoMiner.isIntelliMiner());
+        require(intelliMiner.isIntelliMiner());
 
-        uint8 minerCategory = algoMiner.getCategory();
+        uint8 minerCategory = intelliMiner.getCategory();
 
         require(minerCategory >= 0 && minerCategory <= 5);
 
@@ -79,11 +79,11 @@ contract IntelliFees is ERC20TokenHolder, IntelliSystemRole, IntelliCoreTeamRole
         uint256[6] memory miners;
 
         for(uint256 i = 1; i < _miners.length; i++) {
-            IIntelliMiner algoMiner = IIntelliMiner(_miners[i]);
+            IIntelliMiner intelliMiner = IIntelliMiner(_miners[i]);
 
-            if(!algoMiner.isMining()) continue;
+            if(!intelliMiner.isMining()) continue;
 
-            uint8 minerCategory = algoMiner.getCategory();
+            uint8 minerCategory = intelliMiner.getCategory();
 
             if(minerCategory == 0) {
                 miners[0]++;
@@ -119,13 +119,13 @@ contract IntelliFees is ERC20TokenHolder, IntelliSystemRole, IntelliCoreTeamRole
 
         // Transfer the fees to ENABLED miners...
         for(i = 1; i < _miners.length; i++) {
-            algoMiner = IIntelliMiner(_miners[i]);
+            intelliMiner = IIntelliMiner(_miners[i]);
 
-            if(!algoMiner.isMining()) continue;
+            if(!intelliMiner.isMining()) continue;
 
-            minerCategory = algoMiner.getCategory();
+            minerCategory = intelliMiner.getCategory();
 
-			_token.safeTransfer(algoMiner.getMiner(), feePerMiner[minerCategory]);
+			_token.safeTransfer(intelliMiner.getMiner(), feePerMiner[minerCategory]);
         }
     }
 

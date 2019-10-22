@@ -22,8 +22,8 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliMinerCo
 
         protected override async Task<TransactionReceipt> DeployContractAsync(RuntimeContext context, Web3 web3)
         {
-            var algoMiner = new IntelliMiner(web3, context.GasPriceProvider);
-            return await algoMiner.DeployAsync(
+            var intelliMiner = new IntelliMiner(web3, context.GasPriceProvider);
+            return await intelliMiner.DeployAsync(
                 MinerType,
                 Category,
                 context.ResolveAccountReference(MinerAccountAddress),

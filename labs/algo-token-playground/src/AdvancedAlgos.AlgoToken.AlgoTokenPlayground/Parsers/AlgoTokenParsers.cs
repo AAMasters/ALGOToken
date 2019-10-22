@@ -10,14 +10,14 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
     {
         public static void Register()
         {
-            (from command in CommonParsers.Token("deploy-algotoken")
+            (from command in CommonParsers.Token("deploy-intellitoken")
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
              select new IntelliTokenDeployCommand
              {
                  Name = name.GetOrDefault()
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algotoken-transfer")
+            (from contractReference in CommonParsers.Invoke("intellitoken-transfer")
              from to in CommonParsers.StringValue
              from value in EthUnitParsers.EthValue
              select new IntelliTokenTransferCommand
@@ -27,7 +27,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  Value = value
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algotoken-balanceof")
+            (from contractReference in CommonParsers.Invoke("intellitoken-balanceof")
              from owner in CommonParsers.StringValue
              select new IntelliTokenBalanceOfCommand
              {
@@ -35,13 +35,13 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  OwnerAddress = owner
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algotoken-pause")
+            (from contractReference in CommonParsers.Invoke("intellitoken-pause")
              select new IntelliTokenPauseCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algotoken-unpause")
+            (from contractReference in CommonParsers.Invoke("intellitoken-unpause")
              select new IntelliTokenUnpauseCommand
              {
                  ContractReference = contractReference,

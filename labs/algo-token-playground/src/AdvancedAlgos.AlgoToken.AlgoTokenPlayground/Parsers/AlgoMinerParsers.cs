@@ -10,7 +10,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
     {
         public static void Register()
         {
-            (from command in CommonParsers.Token("deploy-algominer")
+            (from command in CommonParsers.Token("deploy-intelliMiner")
              from minerType in CommonParsers.ByteValue
              from category in CommonParsers.ByteValue
              from minerAccountAddress in CommonParsers.StringValue
@@ -27,19 +27,19 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  TokenAddress = tokenAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-activateminer")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-activateminer")
              select new IntelliMinerActivateMinerCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-deactivateminer")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-deactivateminer")
              select new IntelliMinerDeactivateMinerCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-migrateminer")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-migrateminer")
              from newMinerAddress in CommonParsers.StringValue
              select new IntelliMinerMigrateMinerCommand
              {
@@ -47,25 +47,25 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  NewMinerAddress = newMinerAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-pausemining")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-pausemining")
              select new IntelliMinerPauseMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-resumemining")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-resumemining")
              select new IntelliMinerResumeMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-stopandremoveownership")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-stopandremoveownership")
              select new IntelliMinerStopAndRemoveOwnershipCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-resetminer")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-resetminer")
              from newOwnerAddress in CommonParsers.StringValue
              from newReferralAddress in CommonParsers.StringValue
              select new IntelliMinerResetMinerCommand
@@ -75,31 +75,31 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  NewReferralAddress = newReferralAddress
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-startmining")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-startmining")
              select new IntelliMinerStartMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-stopmining")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-stopmining")
              select new IntelliMinerStopMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-mine")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-mine")
              select new IntelliMinerMineCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-terminate")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-terminate")
              select new IntelliMinerTerminateCommand
              {
                  ContractReference = contractReference
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-addsystem")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-addsystem")
              from account in CommonParsers.StringValue
              select new IntelliMinerAddSystemCommand
              {
@@ -107,7 +107,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  Account = account
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-addcoreteam")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-addcoreteam")
              from account in CommonParsers.StringValue
              select new IntelliMinerAddCoreTeamCommand
              {
@@ -115,7 +115,7 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
                  Account = account
              }).Register();
 
-            (from contractReference in CommonParsers.Invoke("algominer-addsupervisor")
+            (from contractReference in CommonParsers.Invoke("intelliMiner-addsupervisor")
              from account in CommonParsers.StringValue
              select new IntelliMinerAddSupervisorCommand
              {

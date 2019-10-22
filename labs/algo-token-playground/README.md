@@ -3,7 +3,7 @@
 ## Building the application
 
 1. Download and install the netcore 2.1 SDK from <https://dotnet.microsoft.com/download>
-1. Build the application running the proper build script located in the `build` directory (`/labs/algo-token-playground/build`) according to your OS
+1. Build the application running the proper build script located in the `build` directory (`/labs/intelli-token-playground/build`) according to your OS
 1. The compiled binaries will be located in the `release/{platform}` directory 
 1. Once the application is compiled, the generated binaries do not require the netcore SDK to run. All dependencies, including the netcore runtime, are included in the generated directory.
 
@@ -146,17 +146,17 @@ IntelliToken is an standard ERC20 token contract. All available functions belong
 
 The following commands are supported for the `IntelliToken` contract:
 
-#### deploy-algotoken
+#### deploy-intellitoken
 
-`deploy-algotoken [-n <contract_name>]`
+`deploy-intellitoken [-n <contract_name>]`
 
 Creates a new instance of the `IntelliToken` contract.
 
->Example: `deploy-algotoken -n token`
+>Example: `deploy-intellitoken -n token`
 
-#### algotoken-transfer
+#### intellitoken-transfer
 
-`<contract>.algotoken-transfer <to> <value>`
+`<contract>.intellitoken-transfer <to> <value>`
 
 Transfer tokens to the specified address:
 * `to`: the destination account address 
@@ -164,71 +164,71 @@ Transfer tokens to the specified address:
 
 *These parameters follow the same rules listed in the `eth-transfer` command.*
 
->Example: `token.algotoken-transfer dev_pool 100m`
+>Example: `token.intellitoken-transfer dev_pool 100m`
 
-#### algotoken-balanceof
+#### intellitoken-balanceof
 
-`<contract>.algotoken-balanceof <owner>`
+`<contract>.intellitoken-balanceof <owner>`
 
 Get the balance for the specified address:
 * `owner`: the account address to check
 
->Example: `token.algotoken-balanceof dev_pool`
+>Example: `token.intellitoken-balanceof dev_pool`
 
-#### algotoken-pause
+#### intellitoken-pause
 
-`<contract>.algotoken-pause`
+`<contract>.intellitoken-pause`
 
 Pauses the token. All transactions will be suspended.
 
->Example: `token.algotoken-pause`
+>Example: `token.intellitoken-pause`
 
-#### algotoken-unpause
+#### intellitoken-unpause
 
-`<contract>.algotoken-unpause`
+`<contract>.intellitoken-unpause`
 
 Unpauses the token. All transactions will be resumed.
 
->Example: `token.algotoken-unpause`
+>Example: `token.intellitoken-unpause`
 
 ### IntelliPool
 
 The following commands are supported for the `IntelliPool` contract:
 
-#### deploy-algopool
+#### deploy-intellipool
 
-`deploy-algopool <poolType> <tokenAddress> [-n <contract_name>]`
+`deploy-intellipool <poolType> <tokenAddress> [-n <contract_name>]`
 
 Creates a new instance of the `IntelliPool` contract.
 * `poolType`: the type of pool (uint8: 0 = MinerPool, 1 = ReferralPool)
 * `tokenAddress`: the address of the IntelliToken contract
 
->Example: `deploy-algopool 0 token -n dev_pool`
+>Example: `deploy-intellipool 0 token -n dev_pool`
 
-#### algopool-transfertominer
+#### intellipool-transfertominer
 
-`<contract>.algopool-transfertominer <minerAddress>`
+`<contract>.intellipool-transfertominer <minerAddress>`
 
 Transfer tokens from the IntelliPool balance to the IntelliMiner balance. The amount of tokens to be transfered is determined by the IntelliMiner category (see the specification document).
 * `minerAddress`: the address of the IntelliMiner contract
 
->Example: `dev_pool.algopool-transfertominer miner_1`
+>Example: `dev_pool.intellipool-transfertominer miner_1`
 
-#### algopool-terminate
+#### intellipool-terminate
 
-`<contract>.algopool-terminate`
+`<contract>.intellipool-terminate`
 
 Terminates the contract and return its balance to the creator.
 
->Example: `dev_pool.algopool-terminate`
+>Example: `dev_pool.intellipool-terminate`
 
 ### IntelliMiner
 
 The following commands are supported for the `IntelliMiner` contract:
 
-#### deploy-algominer
+#### deploy-intelliMiner
 
-`deploy-algominer <minerType> <category> <minerAccountAddress> <referralAccountAddress> <tokenAddress> [-n <contract_name>]`
+`deploy-intelliMiner <minerType> <category> <minerAccountAddress> <referralAccountAddress> <tokenAddress> [-n <contract_name>]`
 
 Creates a new instance of the `IntelliPool` contract.
 * `minerType`: the type of miner (uint8: 0 = PoolBased, 1 = NonPoolBased)
@@ -237,172 +237,172 @@ Creates a new instance of the `IntelliPool` contract.
 * `referralAccountAddress`: the address of the referral
 * `tokenAddress`: the address of the IntelliToken contract
 
->Example: `deploy-algominer 0 2 miner_1_account referral_1_account token -n miner_1`
+>Example: `deploy-intelliMiner 0 2 miner_1_account referral_1_account token -n miner_1`
 
-#### algominer-activateminer
+#### intelliMiner-activateminer
 
-`<contract>.algominer-activateminer`
+`<contract>.intelliMiner-activateminer`
 
 Activates the miner.
 
->Example: `miner_1.algominer-activateminer`
+>Example: `miner_1.intelliMiner-activateminer`
 
-#### algominer-deactivateminer
+#### intelliMiner-deactivateminer
 
-`<contract>.algominer-deactivateminer`
+`<contract>.intelliMiner-deactivateminer`
 
 Deactivates the miner.
 
->Example: `miner_1.algominer-deactivateminer`
+>Example: `miner_1.intelliMiner-deactivateminer`
 
-#### algominer-migrateminer
+#### intelliMiner-migrateminer
 
-`<contract>.algominer-migrateminer <newMinerAddress>`
+`<contract>.intelliMiner-migrateminer <newMinerAddress>`
 
 Transfer all tokens from this IntelliMiner another IntelliMiner. The miner must be deactivated before running this operation
 * `newMinerAddress`: the address of the new IntelliMiner contract
 
->Example: `miner_1.algominer-migrateminer miner_2`
+>Example: `miner_1.intelliMiner-migrateminer miner_2`
 
-#### algominer-pausemining
+#### intelliMiner-pausemining
 
-`<contract>.algominer-pausemining`
+`<contract>.intelliMiner-pausemining`
 
 Pauses the miner.
 
->Example: `miner_1.algominer-pausemining`
+>Example: `miner_1.intelliMiner-pausemining`
 
-#### algominer-resumemining
+#### intelliMiner-resumemining
 
-`<contract>.algominer-resumemining`
+`<contract>.intelliMiner-resumemining`
 
 Resumes the miner.
 
->Example: `miner_1.algominer-resumemining`
+>Example: `miner_1.intelliMiner-resumemining`
 
-#### algominer-stopandremoveownership
+#### intelliMiner-stopandremoveownership
 
-`<contract>.algominer-stopandremoveownership`
+`<contract>.intelliMiner-stopandremoveownership`
 
 Sets the miner to the stopped state and remove the ownership, a new owner and referral will be assigned using the `resetMiner` operation.
 
->Example: `miner_1.algominer-stopandremoveownership`
+>Example: `miner_1.intelliMiner-stopandremoveownership`
 
-#### algominer-resetminer
+#### intelliMiner-resetminer
 
-`<contract>.algominer-resetminer <newOwnerAddress> <newReferralAddress>`
+`<contract>.intelliMiner-resetminer <newOwnerAddress> <newReferralAddress>`
 
 Resets the miner.
 * `newOwnerAddress`: the address of the new owner
 * `newReferralAddress`: the address of the new referral
 
->Example: `miner_1.algominer-resetminer`
+>Example: `miner_1.intelliMiner-resetminer`
 
-#### algominer-startmining
+#### intelliMiner-startmining
 
-`<contract>.algominer-startmining`
+`<contract>.intelliMiner-startmining`
 
 Starts the miner (used by the owner).
 
->Example: `miner_1.algominer-startmining`
+>Example: `miner_1.intelliMiner-startmining`
 
-#### algominer-stopmining
+#### intelliMiner-stopmining
 
-`<contract>.algominer-stopmining`
+`<contract>.intelliMiner-stopmining`
 
 Stops the miner (used by the owner).
 
->Example: `miner_1.algominer-stopmining`
+>Example: `miner_1.intelliMiner-stopmining`
 
-#### algominer-mine
+#### intelliMiner-mine
 
-`<contract>.algominer-mine`
+`<contract>.intelliMiner-mine`
 
 This operation is executed by the system to request a payment from the IntelliMiner to the owner. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
 
->Example: `miner_1.algominer-mine`
+>Example: `miner_1.intelliMiner-mine`
 
-#### algominer-terminate
+#### intelliMiner-terminate
 
-`<contract>.algominer-terminate`
+`<contract>.intelliMiner-terminate`
 
 Terminates the contract and return its balance to the creator.
 
->Example: `miner_1.algominer-terminate`
+>Example: `miner_1.intelliMiner-terminate`
 
-#### algominer-addsystem
+#### intelliMiner-addsystem
 
-`<contract>.algominer-addsystem <account>`
+`<contract>.intelliMiner-addsystem <account>`
 
 Adds the specified account to the "System" role.
 * `account`: the address of account to be added to the role.
 
->Example: `miner_1.algominer-addsystem 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
+>Example: `miner_1.intelliMiner-addsystem 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
 
-#### algominer-addcoreteam
+#### intelliMiner-addcoreteam
 
-`<contract>.algominer-addcoreteam <account>`
+`<contract>.intelliMiner-addcoreteam <account>`
 
 Adds the specified account to the "Core Team" role.
 * `account`: the address of account to be added to the role.
 
->Example: `miner_1.algominer-addcoreteam 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
+>Example: `miner_1.intelliMiner-addcoreteam 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
 
-#### algominer-addsupervisor
+#### intelliMiner-addsupervisor
 
-`<contract>.algominer-addsupervisor <account>`
+`<contract>.intelliMiner-addsupervisor <account>`
 
 Adds the specified account to the "Supervisor" role.
 * `account`: the address of account to be added to the role.
 
->Example: `miner_1.algominer-addsupervisor 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
+>Example: `miner_1.intelliMiner-addsupervisor 0x862f8938949e4A1aA82Cd427d87E4fc76940e7a1`
 
 ### IntelliFees
 
 The following commands are supported for the `IntelliFees` contract:
 
-#### deploy-algofees
+#### deploy-intellifees
 
-`deploy-algofees <tokenAddress> [-n <contract_name>]`
+`deploy-intellifees <tokenAddress> [-n <contract_name>]`
 
 Creates a new instance of the `IntelliFees` contract.
 * `tokenAddress`: the address of the IntelliToken contract
 
->Example: `deploy-algofees token -n fees1`
+>Example: `deploy-intellifees token -n fees1`
 
-#### algofees-registerminer
+#### intellifees-registerminer
 
-`<contract>.algofees-registerminer <minerAddress>`
+`<contract>.intellifees-registerminer <minerAddress>`
 
 Registers a miner with the IntelliFees.
 * `minerAddress`: the address of the IntelliMiner contract
 
->Example: `fees1.algofees-registerminer miner_0`
+>Example: `fees1.intellifees-registerminer miner_0`
 
-#### algofees-unregisterminer
+#### intellifees-unregisterminer
 
-`<contract>.algofees-unregisterminer <minerAddress>`
+`<contract>.intellifees-unregisterminer <minerAddress>`
 
 Unregisters a miner from the IntelliFees.
 * `minerAddress`: the address of the IntelliMiner contract
 
->Example: `fees1.algofees-unregisterminer miner_0`
+>Example: `fees1.intellifees-unregisterminer miner_0`
 
-#### algofees-mine
+#### intellifees-mine
 
-`<contract>.algofees-mine`
+`<contract>.intellifees-mine`
 
 This operation is executed by the system to request a payment from the IntelliFees to registered miners. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
 
->Example: `fees1.algofees-mine`
+>Example: `fees1.intellifees-mine`
 
-#### algominer-terminate
+#### intelliMiner-terminate
 
-`<contract>.algofees-terminate`
+`<contract>.intellifees-terminate`
 
 Terminates the contract and return its balance to the creator.
 
->Example: `algofees.algofees-terminate`
+>Example: `intellifees.intellifees-terminate`
 
 ### System commands
 

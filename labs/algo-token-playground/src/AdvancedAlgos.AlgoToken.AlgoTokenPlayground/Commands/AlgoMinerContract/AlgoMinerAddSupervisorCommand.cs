@@ -17,9 +17,9 @@ namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliMinerCo
 
         protected override async Task<TransactionReceipt> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoMiner = new IntelliMiner(contractAddress, web3, context.GasPriceProvider);
+            var intelliMiner = new IntelliMiner(contractAddress, web3, context.GasPriceProvider);
 
-            return await algoMiner.AddSupervisorAsync(context.ResolveAccountReference(Account));
+            return await intelliMiner.AddSupervisorAsync(context.ResolveAccountReference(Account));
         }
     }
 }

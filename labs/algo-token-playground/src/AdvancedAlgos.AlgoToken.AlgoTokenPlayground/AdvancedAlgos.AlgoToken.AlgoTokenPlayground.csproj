@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\algo-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj" />
-    <ProjectReference Include="..\..\..\algo-token-distribution\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj" />
+    <ProjectReference Include="..\..\..\intelli-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj" />
+    <ProjectReference Include="..\..\..\intelli-token-distribution\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj" />
     <ProjectReference Include="..\..\..\framework\src\Superalgos.IntelliToken.Framework.Ethereum\Superalgos.IntelliToken.Framework.Ethereum.csproj" />
   </ItemGroup>
 
