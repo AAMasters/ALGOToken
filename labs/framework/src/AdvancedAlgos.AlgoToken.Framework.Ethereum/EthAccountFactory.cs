@@ -5,7 +5,7 @@ using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Signer;
 using Nethereum.Web3.Accounts;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum
+namespace Superalgos.IntelliToken.Framework.Ethereum
 {
     public static class EthAccountFactory
     {

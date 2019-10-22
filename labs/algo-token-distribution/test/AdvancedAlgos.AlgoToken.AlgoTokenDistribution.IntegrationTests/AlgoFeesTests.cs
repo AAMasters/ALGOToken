@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoErc20Token;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.Exceptions;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.IntegrationTest;
+using Superalgos.IntelliToken.IntelliErc20Token;
+using Superalgos.IntelliToken.Framework.Ethereum;
+using Superalgos.IntelliToken.Framework.Ethereum.Exceptions;
+using Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest;
 using Nethereum.RPC.Accounts;
 using Nethereum.Web3;
 using Nethereum.Web3.Accounts;
 using Xunit;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
+namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests
 {
     public class AlgoFeesTests
     {
@@ -28,7 +28,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             await EthNetwork.Instance.RefillAsync(coreTeamAccount);
 
             // Create the ERC20 token...
-            var token = new AlgoTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
+            var token = new IntelliTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
             await token.DeployAsync();
 
             // Create a fees...
@@ -38,7 +38,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             // Create some miners...
             var minerAccounts = new IAccount[3];
             var referralAccounts = new IAccount[3];
-            AlgoMiner[] miners = new AlgoMiner[3];
+            IntelliMiner[] miners = new IntelliMiner[3];
 
             for (int i = 0; i < 3; i++)
             {
@@ -47,7 +47,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
                 referralAccounts[i] = EthAccountFactory.Create();
 
                 // Create the miner...
-                miners[i] = new AlgoMiner(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+                miners[i] = new IntelliMiner(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
                 await miners[i].DeployAsync(0, 2, minerAccounts[i].Address, referralAccounts[i].Address, token.ContractAddress);
             }
 
@@ -114,7 +114,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             await EthNetwork.Instance.RefillAsync(coreTeamAccount);
 
             // Create the ERC20 token...
-            var token = new AlgoTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
+            var token = new IntelliTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
             await token.DeployAsync();
 
             // Create a fees...
@@ -125,12 +125,12 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             await fees1.AddSystemAsync(systemAccount.Address);
 
             // Transfer some tokens to the fees...
-            await token.TransferAsync(fees1.ContractAddress, 151.Algo());
+            await token.TransferAsync(fees1.ContractAddress, 151.Intelli());
 
             // Create one miner per category...
             var minerAccounts = new IAccount[6];
             var referralAccounts = new IAccount[6];
-            var miners = new AlgoMiner[6];
+            var miners = new IntelliMiner[6];
 
             for (byte i = 0; i <= 5; i++)
             {
@@ -140,7 +140,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
                 await EthNetwork.Instance.RefillAsync(minerAccounts[i]);
 
                 // Create the miner as "NonPoolBased" so it can be activated...
-                miners[i] = new AlgoMiner(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
+                miners[i] = new IntelliMiner(EthNetwork.Instance.GetWeb3(coreTeamAccount), EthNetwork.Instance.GasPriceProvider);
                 await miners[i].DeployAsync(1, i, minerAccounts[i].Address, referralAccounts[i].Address, token.ContractAddress);
 
                 // Activate the miner...
@@ -148,7 +148,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
 
                 // Start mining...
                 {
-                    var miner = new AlgoMiner(miners[i].ContractAddress, EthNetwork.Instance.GetWeb3(minerAccounts[i]), EthNetwork.Instance.GasPriceProvider);
+                    var miner = new IntelliMiner(miners[i].ContractAddress, EthNetwork.Instance.GetWeb3(minerAccounts[i]), EthNetwork.Instance.GasPriceProvider);
                     await miner.StartMiningAsync();
                 }
 
@@ -170,12 +170,12 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             var balance4 = await token.BalanceOfAsync(minerAccounts[4].Address);
             var balance5 = await token.BalanceOfAsync(minerAccounts[5].Address);
 
-            Assert.Equal(1.Algo(), balance0);
-            Assert.Equal(10.Algo(), balance1);
-            Assert.Equal(20.Algo(), balance2);
-            Assert.Equal(30.Algo(), balance3);
-            Assert.Equal(40.Algo(), balance4);
-            Assert.Equal(50.Algo(), balance5);
+            Assert.Equal(1.Intelli(), balance0);
+            Assert.Equal(10.Intelli(), balance1);
+            Assert.Equal(20.Intelli(), balance2);
+            Assert.Equal(30.Intelli(), balance3);
+            Assert.Equal(40.Intelli(), balance4);
+            Assert.Equal(50.Intelli(), balance5);
         }
 
         [Fact]
@@ -192,7 +192,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             await EthNetwork.Instance.RefillAsync(coreTeamAccount);
 
             // Create the ERC20 token...
-            var token = new AlgoTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
+            var token = new IntelliTokenV1(EthNetwork.Instance.GetWeb3(tokenOwnerAccount), EthNetwork.Instance.GasPriceProvider);
             await token.DeployAsync();
 
             // Store the current balance of the token owner...
@@ -203,17 +203,17 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests
             await fees1.DeployAsync(token.ContractAddress);
 
             // Transfer some tokens to the fees...
-            await token.TransferAsync(fees1.ContractAddress, 100.Algo());
+            await token.TransferAsync(fees1.ContractAddress, 100.Intelli());
 
             // Ensure the receiver got the tokens...
-            Assert.Equal(100.Algo(), await token.BalanceOfAsync(fees1.ContractAddress));
+            Assert.Equal(100.Intelli(), await token.BalanceOfAsync(fees1.ContractAddress));
 
             // Terminate the contract.
             await fees1.TerminateAsync();
 
             // Ensure the contract returned all the tokens...
             Assert.Equal(0, await token.BalanceOfAsync(fees1.ContractAddress));
-            Assert.Equal(100.Algo(), await token.BalanceOfAsync(coreTeamAccount.Address));
+            Assert.Equal(100.Intelli(), await token.BalanceOfAsync(coreTeamAccount.Address));
         }
     }
 }

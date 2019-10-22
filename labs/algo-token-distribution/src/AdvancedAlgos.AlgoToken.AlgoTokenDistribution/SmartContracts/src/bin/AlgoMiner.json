@@ -21,7 +21,7 @@
         {
             "constant": true,
             "inputs": [],
-            "name": "isAlgoMiner",
+            "name": "isIntelliMiner",
             "outputs": [
                 {
                     "name": "",
@@ -407,7 +407,7 @@
         "getMiner()": "302c11ca",
         "getMinerType()": "4969ae70",
         "getReferral()": "329b1c92",
-        "isAlgoMiner()": "1777fb4b",
+        "isIntelliMiner()": "1777fb4b",
         "isCoreTeam(address)": "608d3d3d",
         "isMining()": "19a74ab3",
         "isSupervisor(address)": "81a24459",
@@ -444,7 +444,7 @@
             "getMiner()": "724",
             "getMinerType()": "744",
             "getReferral()": "735",
-            "isAlgoMiner()": "234",
+            "isIntelliMiner()": "234",
             "isCoreTeam(address)": "infinite",
             "isMining()": "881",
             "isSupervisor(address)": "infinite",

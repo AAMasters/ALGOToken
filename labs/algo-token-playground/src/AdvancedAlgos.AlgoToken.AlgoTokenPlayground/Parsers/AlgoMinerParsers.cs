@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoMinerContract;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliMinerContract;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
-    public static class AlgoMinerParsers
+    public static class IntelliMinerParsers
     {
         public static void Register()
         {
@@ -17,7 +17,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
              from referralAccountAddress in CommonParsers.StringValue
              from tokenAddress in CommonParsers.StringValue
              from name in CommonParsers.Switch('n', "name", CommonParsers.Identifier).Optional()
-             select new AlgoMinerDeployCommand
+             select new IntelliMinerDeployCommand
              {
                  Name = name.GetOrDefault(),
                  MinerType = minerType,
@@ -28,39 +28,39 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-activateminer")
-             select new AlgoMinerActivateMinerCommand
+             select new IntelliMinerActivateMinerCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-deactivateminer")
-             select new AlgoMinerDeactivateMinerCommand
+             select new IntelliMinerDeactivateMinerCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-migrateminer")
              from newMinerAddress in CommonParsers.StringValue
-             select new AlgoMinerMigrateMinerCommand
+             select new IntelliMinerMigrateMinerCommand
              {
                  ContractReference = contractReference,
                  NewMinerAddress = newMinerAddress
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-pausemining")
-             select new AlgoMinerPauseMiningCommand
+             select new IntelliMinerPauseMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-resumemining")
-             select new AlgoMinerResumeMiningCommand
+             select new IntelliMinerResumeMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-stopandremoveownership")
-             select new AlgoMinerStopAndRemoveOwnershipCommand
+             select new IntelliMinerStopAndRemoveOwnershipCommand
              {
                  ContractReference = contractReference,
              }).Register();
@@ -68,7 +68,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
             (from contractReference in CommonParsers.Invoke("algominer-resetminer")
              from newOwnerAddress in CommonParsers.StringValue
              from newReferralAddress in CommonParsers.StringValue
-             select new AlgoMinerResetMinerCommand
+             select new IntelliMinerResetMinerCommand
              {
                  ContractReference = contractReference,
                  NewOwnerAddress = newOwnerAddress,
@@ -76,32 +76,32 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-startmining")
-             select new AlgoMinerStartMiningCommand
+             select new IntelliMinerStartMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-stopmining")
-             select new AlgoMinerStopMiningCommand
+             select new IntelliMinerStopMiningCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-mine")
-             select new AlgoMinerMineCommand
+             select new IntelliMinerMineCommand
              {
                  ContractReference = contractReference,
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-terminate")
-             select new AlgoMinerTerminateCommand
+             select new IntelliMinerTerminateCommand
              {
                  ContractReference = contractReference
              }).Register();
 
             (from contractReference in CommonParsers.Invoke("algominer-addsystem")
              from account in CommonParsers.StringValue
-             select new AlgoMinerAddSystemCommand
+             select new IntelliMinerAddSystemCommand
              {
                  ContractReference = contractReference,
                  Account = account
@@ -109,7 +109,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
 
             (from contractReference in CommonParsers.Invoke("algominer-addcoreteam")
              from account in CommonParsers.StringValue
-             select new AlgoMinerAddCoreTeamCommand
+             select new IntelliMinerAddCoreTeamCommand
              {
                  ContractReference = contractReference,
                  Account = account
@@ -117,7 +117,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
 
             (from contractReference in CommonParsers.Invoke("algominer-addsupervisor")
              from account in CommonParsers.StringValue
-             select new AlgoMinerAddSupervisorCommand
+             select new IntelliMinerAddSupervisorCommand
              {
                  ContractReference = contractReference,
                  Account = account

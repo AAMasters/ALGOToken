@@ -12,7 +12,7 @@
         {
             "constant": true,
             "inputs": [],
-            "name": "isAlgoMiner",
+            "name": "isIntelliMiner",
             "outputs": [
                 {
                     "name": "",
@@ -258,7 +258,7 @@
         "addSupervisor(address)": "29d10b6e",
         "deactivateMiner()": "9e614ca0",
         "getCategory()": "80258e47",
-        "isAlgoMiner()": "1777fb4b",
+        "isIntelliMiner()": "1777fb4b",
         "isCoreTeam(address)": "608d3d3d",
         "isSupervisor(address)": "81a24459",
         "migrateMiner(address)": "231d4e2a",
@@ -285,7 +285,7 @@
             "addSupervisor(address)": "infinite",
             "deactivateMiner()": "infinite",
             "getCategory()": "608",
-            "isAlgoMiner()": "212",
+            "isIntelliMiner()": "212",
             "isCoreTeam(address)": "infinite",
             "isSupervisor(address)": "infinite",
             "migrateMiner(address)": "infinite",

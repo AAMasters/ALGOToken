@@ -1,7 +1,7 @@
 {
     "contracts": {
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoCoreTeamRole.sol": {
-            "AlgoCoreTeamRole": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
+            "IntelliCoreTeamRole": {
                 "abi": [
                     {
                         "constant": false,
@@ -75,8 +75,8 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoMiner.sol": {
-            "AlgoMiner": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliMiner.sol": {
+            "IntelliMiner": {
                 "abi": [
                     {
                         "constant": false,
@@ -90,7 +90,7 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "isAlgoMiner",
+                        "name": "isIntelliMiner",
                         "outputs": [
                             {
                                 "name": "",
@@ -351,7 +351,7 @@
                             "addSupervisor(address)": "infinite",
                             "deactivateMiner()": "infinite",
                             "getCategory()": "608",
-                            "isAlgoMiner()": "212",
+                            "isIntelliMiner()": "212",
                             "isCoreTeam(address)": "infinite",
                             "isSupervisor(address)": "infinite",
                             "migrateMiner(address)": "infinite",
@@ -373,7 +373,7 @@
                         "addSupervisor(address)": "29d10b6e",
                         "deactivateMiner()": "9e614ca0",
                         "getCategory()": "80258e47",
-                        "isAlgoMiner()": "1777fb4b",
+                        "isIntelliMiner()": "1777fb4b",
                         "isCoreTeam(address)": "608d3d3d",
                         "isSupervisor(address)": "81a24459",
                         "migrateMiner(address)": "231d4e2a",
@@ -388,13 +388,13 @@
                         "stopMining()": "da408679"
                     }
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"pauseMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isAlgoMiner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"startMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newMinerAddress\",\"type\":\"address\"}],\"name\":\"migrateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addSupervisor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"stopAndRemoveOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"resumeMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCategory\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isSupervisor\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"mine\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"deactivateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwnerAddress\",\"type\":\"address\"}],\"name\":\"resetMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"activateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceSupervisor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"DAYS_PER_YEAR\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"stopMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"minerType\",\"type\":\"uint16\"},{\"name\":\"category\",\"type\":\"uint8\"},{\"name\":\"ownerAddress\",\"type\":\"address\"},{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoMiner.sol\":\"AlgoMiner\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoCoreTeamRole.sol\":{\"keccak256\":\"0x98513c8bd78301543260967ae791ebb2a652f73fef585417f72a3097f4e1ae21\",\"urls\":[\"bzzr://a9cfa1df913c0a9ad0937d821ead954e31f7da6a462933bcfa20abe2b44ec984\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoMiner.sol\":{\"keccak256\":\"0xbcbc30316cb27f341b793f19490a9d68bab1a270dbd9c67681a1bf410a6944b5\",\"urls\":[\"bzzr://3e80f70b75884a37ba48ec93966687fb024e9c012eb297e98191245728cf882c\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoSupervisorRole.sol\":{\"keccak256\":\"0x626852f0a9f4d4f9380980d0e1149ddbd366f191fd0ccccdd05bddad48b6edb9\",\"urls\":[\"bzzr://b3e1ed4ffdbe656126a72382de3f2ecacb7005937172513a47019dbaaace7e5a\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/IAlgoMiner.sol\":{\"keccak256\":\"0xb457e39e512b5475c3e70193ab0a751f6626a50417954247f0cf47c7ca15eff7\",\"urls\":[\"bzzr://3b585a4055121fee393f2b691538036c87f56556f43f0b6e851a88de7b8275e6\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"pauseMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isIntelliMiner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"startMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newMinerAddress\",\"type\":\"address\"}],\"name\":\"migrateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addSupervisor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"stopAndRemoveOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"resumeMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isCoreTeam\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getCategory\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isSupervisor\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"mine\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"deactivateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwnerAddress\",\"type\":\"address\"}],\"name\":\"resetMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"activateMiner\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceSupervisor\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"DAYS_PER_YEAR\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceCoreTeam\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"stopMining\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"minerType\",\"type\":\"uint16\"},{\"name\":\"category\",\"type\":\"uint8\"},{\"name\":\"ownerAddress\",\"type\":\"address\"},{\"name\":\"tokenAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliMiner.sol\":\"IntelliMiner\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol\":{\"keccak256\":\"0x98513c8bd78301543260967ae791ebb2a652f73fef585417f72a3097f4e1ae21\",\"urls\":[\"bzzr://a9cfa1df913c0a9ad0937d821ead954e31f7da6a462933bcfa20abe2b44ec984\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliMiner.sol\":{\"keccak256\":\"0xbcbc30316cb27f341b793f19490a9d68bab1a270dbd9c67681a1bf410a6944b5\",\"urls\":[\"bzzr://3e80f70b75884a37ba48ec93966687fb024e9c012eb297e98191245728cf882c\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoSupervisorRole.sol\":{\"keccak256\":\"0x626852f0a9f4d4f9380980d0e1149ddbd366f191fd0ccccdd05bddad48b6edb9\",\"urls\":[\"bzzr://b3e1ed4ffdbe656126a72382de3f2ecacb7005937172513a47019dbaaace7e5a\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol\":{\"keccak256\":\"0xb457e39e512b5475c3e70193ab0a751f6626a50417954247f0cf47c7ca15eff7\",\"urls\":[\"bzzr://3b585a4055121fee393f2b691538036c87f56556f43f0b6e851a88de7b8275e6\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoSupervisorRole.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoSupervisorRole.sol": {
             "AlgoSupervisorRole": {
                 "abi": [
                     {
@@ -469,13 +469,13 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/IAlgoMiner.sol": {
-            "IAlgoMiner": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
+            "IIntelliMiner": {
                 "abi": [
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "isAlgoMiner",
+                        "name": "isIntelliMiner",
                         "outputs": [
                             {
                                 "name": "",
@@ -514,7 +514,7 @@
                     "gasEstimates": null,
                     "methodIdentifiers": {
                         "getCategory()": "80258e47",
-                        "isAlgoMiner()": "1777fb4b"
+                        "isIntelliMiner()": "1777fb4b"
                     }
                 },
                 "metadata": "",
@@ -523,7 +523,7 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "Roles": {
                 "abi": [],
                 "devdoc": {
@@ -551,13 +551,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"Roles\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":\"Roles\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol\":{\"keccak256\":\"0xa6e47d62e68903c8fff23500d80e7cc8085b9127995803478d9982cd8a6d49e4\",\"urls\":[\"bzzr://7c87eb3c145fe7592c97baa287501faff7e81c1965333c9b042ffb6b387e94a1\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "SafeMath": {
                 "abi": [],
                 "devdoc": {
@@ -587,13 +587,13 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeMath\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":\"SafeMath\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "IERC20": {
                 "abi": [
                     {
@@ -797,7 +797,7 @@
                 }
             }
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "SafeERC20": {
                 "abi": [],
                 "devdoc": {
@@ -827,7 +827,7 @@
                     },
                     "methodIdentifiers": {}
                 },
-                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
+                "metadata": "{\"compiler\":{\"version\":\"0.4.24+commit.e67f0147\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{},\"title\":\"SafeERC20\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":\"SafeERC20\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xdd18f05c74536a06166c90a17ec3c6932853764f292bed314ceb23e730ff83af\",\"urls\":[\"bzzr://1d8a608339978ac18782f7051816cf23b4072d8814979e3ef74788cc6025cca0\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xc8a7f15fa44eb10057f8bcb58418d3aed6f5267d211d18f93f3d4e0293e3da44\",\"urls\":[\"bzzr://8825e2508348b01a091ff47b8525e583b6e5604f6679684f805d67a9a6a2a7e9\"]},\"d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x0a172a0ef8681d4a7d8034d003670a9b1968d914b0bfa64e13ddca289a85d24a\",\"urls\":[\"bzzr://733b6203c967b44d6de90b5c6b144e58a380a3f29befb2dc70e765dae2f1ca18\"]}},\"version\":1}",
                 "userdoc": {
                     "methods": {}
                 }
@@ -835,11 +835,11 @@
         }
     },
     "sources": {
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoCoreTeamRole.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoCoreTeamRole.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
                 "exportedSymbols": {
-                    "AlgoCoreTeamRole": [
+                    "IntelliCoreTeamRole": [
                         86
                     ]
                 },
@@ -858,8 +858,8 @@
                         "src": "0:24:0"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                         "id": 2,
                         "nodeType": "ImportDirective",
                         "scope": 87,
@@ -878,7 +878,7 @@
                         "linearizedBaseContracts": [
                             86
                         ],
-                        "name": "AlgoCoreTeamRole",
+                        "name": "IntelliCoreTeamRole",
                         "nodeType": "ContractDefinition",
                         "nodes": [
                             {
@@ -1852,11 +1852,11 @@
             },
             "id": 0
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoMiner.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliMiner.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoMiner.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliMiner.sol",
                 "exportedSymbols": {
-                    "AlgoMiner": [
+                    "IntelliMiner": [
                         482
                     ]
                 },
@@ -1874,8 +1874,8 @@
                         "src": "0:23:1"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "id": 89,
                         "nodeType": "ImportDirective",
                         "scope": 483,
@@ -1885,8 +1885,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                         "id": 90,
                         "nodeType": "ImportDirective",
                         "scope": 483,
@@ -1896,8 +1896,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/IAlgoMiner.sol",
-                        "file": "./IAlgoMiner.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
+                        "file": "./IIntelliMiner.sol",
                         "id": 91,
                         "nodeType": "ImportDirective",
                         "scope": 483,
@@ -1907,8 +1907,8 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoCoreTeamRole.sol",
-                        "file": "./AlgoCoreTeamRole.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IntelliCoreTeamRole.sol",
+                        "file": "./IntelliCoreTeamRole.sol",
                         "id": 92,
                         "nodeType": "ImportDirective",
                         "scope": 483,
@@ -1918,7 +1918,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoSupervisorRole.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoSupervisorRole.sol",
                         "file": "./AlgoSupervisorRole.sol",
                         "id": 93,
                         "nodeType": "ImportDirective",
@@ -1935,13 +1935,13 @@
                                 "baseName": {
                                     "contractScope": null,
                                     "id": 94,
-                                    "name": "AlgoCoreTeamRole",
+                                    "name": "IntelliCoreTeamRole",
                                     "nodeType": "UserDefinedTypeName",
                                     "referencedDeclaration": 86,
                                     "src": "512:16:1",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_AlgoCoreTeamRole_$86",
-                                        "typeString": "contract AlgoCoreTeamRole"
+                                        "typeIdentifier": "t_contract$_IntelliCoreTeamRole_$86",
+                                        "typeString": "contract IntelliCoreTeamRole"
                                     }
                                 },
                                 "id": 95,
@@ -1971,13 +1971,13 @@
                                 "baseName": {
                                     "contractScope": null,
                                     "id": 98,
-                                    "name": "IAlgoMiner",
+                                    "name": "IIntelliMiner",
                                     "nodeType": "UserDefinedTypeName",
                                     "referencedDeclaration": 582,
                                     "src": "550:10:1",
                                     "typeDescriptions": {
-                                        "typeIdentifier": "t_contract$_IAlgoMiner_$582",
-                                        "typeString": "contract IAlgoMiner"
+                                        "typeIdentifier": "t_contract$_IIntelliMiner_$582",
+                                        "typeString": "contract IIntelliMiner"
                                     }
                                 },
                                 "id": 99,
@@ -2000,7 +2000,7 @@
                             569,
                             86
                         ],
-                        "name": "AlgoMiner",
+                        "name": "IntelliMiner",
                         "nodeType": "ContractDefinition",
                         "nodes": [
                             {
@@ -2076,7 +2076,7 @@
                                 "visibility": "public"
                             },
                             {
-                                "canonicalName": "AlgoMiner.MinerState",
+                                "canonicalName": "IntelliMiner.MinerState",
                                 "id": 110,
                                 "members": [
                                     {
@@ -2225,7 +2225,7 @@
                                 "storageLocation": "default",
                                 "typeDescriptions": {
                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                    "typeString": "enum AlgoMiner.MinerState"
+                                    "typeString": "enum IntelliMiner.MinerState"
                                 },
                                 "typeName": {
                                     "contractScope": null,
@@ -2236,7 +2236,7 @@
                                     "src": "887:10:1",
                                     "typeDescriptions": {
                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                        "typeString": "enum AlgoMiner.MinerState"
+                                        "typeString": "enum IntelliMiner.MinerState"
                                     }
                                 },
                                 "value": null,
@@ -2586,14 +2586,14 @@
                                         "modifierName": {
                                             "argumentTypes": null,
                                             "id": 138,
-                                            "name": "AlgoCoreTeamRole",
+                                            "name": "IntelliCoreTeamRole",
                                             "nodeType": "Identifier",
                                             "overloadedDeclarations": [],
                                             "referencedDeclaration": 86,
                                             "src": "1154:16:1",
                                             "typeDescriptions": {
-                                                "typeIdentifier": "t_type$_t_contract$_AlgoCoreTeamRole_$86_$",
-                                                "typeString": "type(contract AlgoCoreTeamRole)"
+                                                "typeIdentifier": "t_type$_t_contract$_IntelliCoreTeamRole_$86_$",
+                                                "typeString": "type(contract IntelliCoreTeamRole)"
                                             }
                                         },
                                         "nodeType": "ModifierInvocation",
@@ -2890,7 +2890,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 182,
                                                         "isConstant": false,
@@ -2907,7 +2907,7 @@
                                                             "src": "1530:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -2924,7 +2924,7 @@
                                                                 "src": "1540:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 181,
@@ -2938,7 +2938,7 @@
                                                             "src": "1540:22:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "1530:32:1",
@@ -3095,16 +3095,16 @@
                                                                             "referencedDeclaration": 1059,
                                                                             "src": "1669:4:1",
                                                                             "typeDescriptions": {
-                                                                                "typeIdentifier": "t_contract$_AlgoMiner_$482",
-                                                                                "typeString": "contract AlgoMiner"
+                                                                                "typeIdentifier": "t_contract$_IntelliMiner_$482",
+                                                                                "typeString": "contract IntelliMiner"
                                                                             }
                                                                         }
                                                                     ],
                                                                     "expression": {
                                                                         "argumentTypes": [
                                                                             {
-                                                                                "typeIdentifier": "t_contract$_AlgoMiner_$482",
-                                                                                "typeString": "contract AlgoMiner"
+                                                                                "typeIdentifier": "t_contract$_IntelliMiner_$482",
+                                                                                "typeString": "contract IntelliMiner"
                                                                             }
                                                                         ],
                                                                         "id": 192,
@@ -3384,7 +3384,7 @@
                                                     "src": "1800:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -3401,7 +3401,7 @@
                                                         "src": "1809:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 213,
@@ -3415,13 +3415,13 @@
                                                     "src": "1809:20:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "1800:29:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 215,
@@ -3491,7 +3491,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 226,
                                                         "isConstant": false,
@@ -3508,7 +3508,7 @@
                                                             "src": "1911:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -3525,7 +3525,7 @@
                                                                 "src": "1921:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 225,
@@ -3539,7 +3539,7 @@
                                                             "src": "1921:22:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "1911:32:1",
@@ -3606,7 +3606,7 @@
                                                     "src": "1965:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -3623,7 +3623,7 @@
                                                         "src": "1974:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 231,
@@ -3637,13 +3637,13 @@
                                                     "src": "1974:22:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "1965:31:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 233,
@@ -3764,7 +3764,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 250,
                                                         "isConstant": false,
@@ -3781,7 +3781,7 @@
                                                             "src": "2124:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -3798,7 +3798,7 @@
                                                                 "src": "2134:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 249,
@@ -3812,7 +3812,7 @@
                                                             "src": "2134:22:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "2124:32:1",
@@ -3893,16 +3893,16 @@
                                                                         "referencedDeclaration": 1059,
                                                                         "src": "2232:4:1",
                                                                         "typeDescriptions": {
-                                                                            "typeIdentifier": "t_contract$_AlgoMiner_$482",
-                                                                            "typeString": "contract AlgoMiner"
+                                                                            "typeIdentifier": "t_contract$_IntelliMiner_$482",
+                                                                            "typeString": "contract IntelliMiner"
                                                                         }
                                                                     }
                                                                 ],
                                                                 "expression": {
                                                                     "argumentTypes": [
                                                                         {
-                                                                            "typeIdentifier": "t_contract$_AlgoMiner_$482",
-                                                                            "typeString": "contract AlgoMiner"
+                                                                            "typeIdentifier": "t_contract$_IntelliMiner_$482",
+                                                                            "typeString": "contract IntelliMiner"
                                                                         }
                                                                     ],
                                                                     "id": 259,
@@ -4128,7 +4128,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 275,
                                                         "isConstant": false,
@@ -4145,7 +4145,7 @@
                                                             "src": "2319:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -4162,7 +4162,7 @@
                                                                 "src": "2329:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 274,
@@ -4176,7 +4176,7 @@
                                                             "src": "2329:20:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "2319:30:1",
@@ -4243,7 +4243,7 @@
                                                     "src": "2371:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -4260,7 +4260,7 @@
                                                         "src": "2380:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 280,
@@ -4274,13 +4274,13 @@
                                                     "src": "2380:20:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "2371:29:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 282,
@@ -4350,7 +4350,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 293,
                                                         "isConstant": false,
@@ -4367,7 +4367,7 @@
                                                             "src": "2481:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -4384,7 +4384,7 @@
                                                                 "src": "2491:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 292,
@@ -4398,7 +4398,7 @@
                                                             "src": "2491:20:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "2481:30:1",
@@ -4465,7 +4465,7 @@
                                                     "src": "2525:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -4482,7 +4482,7 @@
                                                         "src": "2534:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 298,
@@ -4496,13 +4496,13 @@
                                                     "src": "2534:20:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "2525:29:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 300,
@@ -4572,7 +4572,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 311,
                                                         "isConstant": false,
@@ -4589,7 +4589,7 @@
                                                             "src": "2645:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -4606,7 +4606,7 @@
                                                                 "src": "2655:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 310,
@@ -4620,7 +4620,7 @@
                                                             "src": "2655:18:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "2645:28:1",
@@ -4687,7 +4687,7 @@
                                                     "src": "2695:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -4704,7 +4704,7 @@
                                                         "src": "2704:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 316,
@@ -4718,13 +4718,13 @@
                                                     "src": "2704:18:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "2695:27:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 318,
@@ -4934,7 +4934,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 341,
                                                         "isConstant": false,
@@ -4951,7 +4951,7 @@
                                                             "src": "2880:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -4968,7 +4968,7 @@
                                                                 "src": "2890:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 340,
@@ -4982,7 +4982,7 @@
                                                             "src": "2890:18:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "2880:28:1",
@@ -5049,7 +5049,7 @@
                                                     "src": "2922:6:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "nodeType": "Assignment",
@@ -5066,7 +5066,7 @@
                                                         "src": "2931:10:1",
                                                         "typeDescriptions": {
                                                             "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                            "typeString": "type(enum AlgoMiner.MinerState)"
+                                                            "typeString": "type(enum IntelliMiner.MinerState)"
                                                         }
                                                     },
                                                     "id": 346,
@@ -5080,13 +5080,13 @@
                                                     "src": "2931:20:1",
                                                     "typeDescriptions": {
                                                         "typeIdentifier": "t_enum$_MinerState_$110",
-                                                        "typeString": "enum AlgoMiner.MinerState"
+                                                        "typeString": "enum IntelliMiner.MinerState"
                                                     }
                                                 },
                                                 "src": "2922:29:1",
                                                 "typeDescriptions": {
                                                     "typeIdentifier": "t_enum$_MinerState_$110",
-                                                    "typeString": "enum AlgoMiner.MinerState"
+                                                    "typeString": "enum IntelliMiner.MinerState"
                                                 }
                                             },
                                             "id": 348,
@@ -5229,7 +5229,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 363,
                                                         "isConstant": false,
@@ -5246,7 +5246,7 @@
                                                             "src": "3061:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -5263,7 +5263,7 @@
                                                                 "src": "3071:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 362,
@@ -5277,7 +5277,7 @@
                                                             "src": "3071:20:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "3061:30:1",
@@ -5513,7 +5513,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 385,
                                                         "isConstant": false,
@@ -5530,7 +5530,7 @@
                                                             "src": "3229:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -5547,7 +5547,7 @@
                                                                 "src": "3239:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 384,
@@ -5561,7 +5561,7 @@
                                                             "src": "3239:20:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "3229:30:1",
@@ -5781,7 +5781,7 @@
                                                         "argumentTypes": null,
                                                         "commonType": {
                                                             "typeIdentifier": "t_enum$_MinerState_$110",
-                                                            "typeString": "enum AlgoMiner.MinerState"
+                                                            "typeString": "enum IntelliMiner.MinerState"
                                                         },
                                                         "id": 406,
                                                         "isConstant": false,
@@ -5798,7 +5798,7 @@
                                                             "src": "3394:6:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "nodeType": "BinaryOperation",
@@ -5815,7 +5815,7 @@
                                                                 "src": "3404:10:1",
                                                                 "typeDescriptions": {
                                                                     "typeIdentifier": "t_type$_t_enum$_MinerState_$110_$",
-                                                                    "typeString": "type(enum AlgoMiner.MinerState)"
+                                                                    "typeString": "type(enum IntelliMiner.MinerState)"
                                                                 }
                                                             },
                                                             "id": 405,
@@ -5829,7 +5829,7 @@
                                                             "src": "3404:20:1",
                                                             "typeDescriptions": {
                                                                 "typeIdentifier": "t_enum$_MinerState_$110",
-                                                                "typeString": "enum AlgoMiner.MinerState"
+                                                                "typeString": "enum IntelliMiner.MinerState"
                                                             }
                                                         },
                                                         "src": "3394:30:1",
@@ -6675,7 +6675,7 @@
                                 "isConstructor": false,
                                 "isDeclaredConst": true,
                                 "modifiers": [],
-                                "name": "isAlgoMiner",
+                                "name": "isIntelliMiner",
                                 "nodeType": "FunctionDefinition",
                                 "parameters": {
                                     "id": 466,
@@ -6813,9 +6813,9 @@
             },
             "id": 1
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoSupervisorRole.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoSupervisorRole.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/AlgoSupervisorRole.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/AlgoSupervisorRole.sol",
                 "exportedSymbols": {
                     "AlgoSupervisorRole": [
                         569
@@ -6836,8 +6836,8 @@
                         "src": "0:24:2"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
-                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                        "file": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                         "id": 485,
                         "nodeType": "ImportDirective",
                         "scope": 570,
@@ -7830,11 +7830,11 @@
             },
             "id": 2
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/IAlgoMiner.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/IAlgoMiner.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/IIntelliMiner.sol",
                 "exportedSymbols": {
-                    "IAlgoMiner": [
+                    "IIntelliMiner": [
                         582
                     ]
                 },
@@ -7861,7 +7861,7 @@
                         "linearizedBaseContracts": [
                             582
                         ],
-                        "name": "IAlgoMiner",
+                        "name": "IIntelliMiner",
                         "nodeType": "ContractDefinition",
                         "nodes": [
                             {
@@ -7872,7 +7872,7 @@
                                 "isConstructor": false,
                                 "isDeclaredConst": true,
                                 "modifiers": [],
-                                "name": "isAlgoMiner",
+                                "name": "isIntelliMiner",
                                 "nodeType": "FunctionDefinition",
                                 "parameters": {
                                     "id": 572,
@@ -7985,9 +7985,9 @@
             },
             "id": 3
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/access/Roles.sol",
                 "exportedSymbols": {
                     "Roles": [
                         676
@@ -9264,9 +9264,9 @@
             },
             "id": 4
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                 "exportedSymbols": {
                     "SafeMath": [
                         804
@@ -10908,9 +10908,9 @@
             },
             "id": 5
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                 "exportedSymbols": {
                     "IERC20": [
                         873
@@ -11745,9 +11745,9 @@
             },
             "id": 6
         },
-        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+        "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
             "ast": {
-                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
+                "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol",
                 "exportedSymbols": {
                     "SafeERC20": [
                         1017
@@ -11768,7 +11768,7 @@
                         "src": "0:24:7"
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
                         "file": "./IERC20.sol",
                         "id": 876,
                         "nodeType": "ImportDirective",
@@ -11779,7 +11779,7 @@
                         "unitAlias": ""
                     },
                     {
-                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/AdvancedAlgos.AlgoErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
+                        "absolutePath": "d:/GitHub/Sabra/ALGOToken/labs/algo-erc20-token/src/Superalgos.IntelliErc20Token/SmartContracts/src/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol",
                         "file": "../../math/SafeMath.sol",
                         "id": 877,
                         "nodeType": "ImportDirective",

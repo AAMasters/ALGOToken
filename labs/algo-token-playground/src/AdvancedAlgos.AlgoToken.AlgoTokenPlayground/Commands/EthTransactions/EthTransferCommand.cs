@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoErc20Token;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.EthTransactions;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliErc20Token;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.EthTransactions;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.Hex.HexTypes;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.EthTransactions
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.EthTransactions
 {
     public class EthTransferCommand : EthTransactionalCommand
     {

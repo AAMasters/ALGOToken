@@ -2,7 +2,7 @@ pragma solidity ^0.4.24;
 
 import "openzeppelin-solidity/contracts/access/Roles.sol";
 
-contract AlgoCoreTeamRole {
+contract IntelliCoreTeamRole {
     using Roles for Roles.Role;
 
     Roles.Role private _coreTeamMembers;

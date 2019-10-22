@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenDistribution;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenDistribution;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoFeesContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoFeesContract
 {
     public class AlgoFeesTerminateCommand : EthInvokeTransactionalFunctionCommand
     {

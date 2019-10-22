@@ -4,12 +4,12 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Parsers;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground
+namespace Superalgos.IntelliToken.IntelliTokenPlayground
 {
     public class REPL
     {
@@ -25,10 +25,10 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground
             EthTransactionsParsers.Register();
             AccountManagementParsers.Register();
             ContractManagementParsers.Register();
-            AlgoTokenParsers.Register();
+            IntelliTokenParsers.Register();
             AlgoPoolParsers.Register();
             AlgoFeesParsers.Register();
-            AlgoMinerParsers.Register();
+            IntelliMinerParsers.Register();
         }
 
         private REPL() { }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Nethereum.Web3.Accounts;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Runtime
 {
     public class EthContractDescriptor
     {

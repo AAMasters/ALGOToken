@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenDistribution;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenDistribution;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoMinerContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliMinerContract
 {
-    public class AlgoMinerDeployCommand : DeployContractCommand
+    public class IntelliMinerDeployCommand : DeployContractCommand
     {
-        public override string DefaultName => "AlgoMiner";
+        public override string DefaultName => "IntelliMiner";
 
         public byte MinerType { get; set; }
         public byte Category { get; set; }
@@ -22,7 +22,7 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoMinerContract
 
         protected override async Task<TransactionReceipt> DeployContractAsync(RuntimeContext context, Web3 web3)
         {
-            var algoMiner = new AlgoMiner(web3, context.GasPriceProvider);
+            var algoMiner = new IntelliMiner(web3, context.GasPriceProvider);
             return await algoMiner.DeployAsync(
                 MinerType,
                 Category,

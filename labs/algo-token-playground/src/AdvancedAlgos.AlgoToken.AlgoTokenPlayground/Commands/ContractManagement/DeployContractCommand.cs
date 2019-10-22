@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.EthTransactions;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.Exceptions;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.EthTransactions;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
+using Superalgos.IntelliToken.Framework.Ethereum.Exceptions;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement
 {
     public abstract class DeployContractCommand : EthTransactionalCommand
     {

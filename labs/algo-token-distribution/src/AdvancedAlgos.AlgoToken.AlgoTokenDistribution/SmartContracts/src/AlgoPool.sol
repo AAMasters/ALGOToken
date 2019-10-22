@@ -3,12 +3,12 @@ pragma solidity 0.4.24;
 import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
-import "./IAlgoMiner.sol";
+import "./IIntelliMiner.sol";
 import "./AlgoCommon.sol";
 import "./ERC20TokenHolder.sol";
-import "./AlgoCoreTeamRole.sol";
+import "./IntelliCoreTeamRole.sol";
 
-contract AlgoPool is AlgoCommon, ERC20TokenHolder, AlgoCoreTeamRole {
+contract AlgoPool is AlgoCommon, ERC20TokenHolder, IntelliCoreTeamRole {
     using SafeERC20 for IERC20;
 
     enum PoolType {
@@ -21,7 +21,7 @@ contract AlgoPool is AlgoCommon, ERC20TokenHolder, AlgoCoreTeamRole {
 
     constructor(PoolType poolType, address tokenAddress)
         ERC20TokenHolder(tokenAddress)
-        AlgoCoreTeamRole()
+        IntelliCoreTeamRole()
         public {
         _poolType = poolType;
     }
@@ -29,9 +29,9 @@ contract AlgoPool is AlgoCommon, ERC20TokenHolder, AlgoCoreTeamRole {
     function transferToMiner(address minerAddress) public notTerminated onlyCoreTeam {
         require(!_fundedMiners[minerAddress]);
 
-        IAlgoMiner algoMiner = IAlgoMiner(minerAddress);
+        IIntelliMiner algoMiner = IIntelliMiner(minerAddress);
         
-        require(algoMiner.isAlgoMiner());
+        require(algoMiner.isIntelliMiner());
         
         uint8 minerCategory = algoMiner.getCategory();
 

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.Framework.Ethereum;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Runtime
 {
     public class RuntimeContext
     {

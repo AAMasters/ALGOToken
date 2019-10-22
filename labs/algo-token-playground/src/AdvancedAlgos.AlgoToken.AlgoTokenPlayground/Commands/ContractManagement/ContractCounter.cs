@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement
 {
     public static class ContractCounter
     {

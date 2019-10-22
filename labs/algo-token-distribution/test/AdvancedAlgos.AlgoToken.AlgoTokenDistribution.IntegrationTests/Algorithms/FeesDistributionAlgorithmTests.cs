@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using AdvancedAlgos.AlgoToken.AlgoTokenDistribution.Algorithms;
+using Superalgos.IntelliToken.IntelliTokenDistribution.Algorithms;
 using Xunit;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution.IntegrationTests.Algorithms
+namespace Superalgos.IntelliToken.IntelliTokenDistribution.IntegrationTests.Algorithms
 {
     public class FeesDistributionAlgorithmTests
     {

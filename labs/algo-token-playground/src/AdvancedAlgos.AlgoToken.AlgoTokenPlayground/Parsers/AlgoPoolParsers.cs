@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoPoolContract;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoPoolContract;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
     public static class AlgoPoolParsers
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AccountManagement;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AccountManagement;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
     public static class AccountManagementParsers
     {

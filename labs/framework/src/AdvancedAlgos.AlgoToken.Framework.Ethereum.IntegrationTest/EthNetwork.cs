@@ -10,7 +10,7 @@ using Nethereum.Util;
 using Nethereum.Web3;
 using Nethereum.Web3.Accounts;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum.IntegrationTest
+namespace Superalgos.IntelliToken.Framework.Ethereum.IntegrationTest
 {
     public class EthNetwork
     {

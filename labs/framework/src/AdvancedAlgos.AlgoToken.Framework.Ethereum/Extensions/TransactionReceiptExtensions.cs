@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using Nethereum.RPC.Eth.DTOs;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.Exceptions;
+using Superalgos.IntelliToken.Framework.Ethereum.Exceptions;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum.Extensions
+namespace Superalgos.IntelliToken.Framework.Ethereum.Extensions
 {
     public static class TransactionReceiptExtensions
     {

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.Framework.Ethereum;
 using Nethereum.Contracts;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoErc20Token
+namespace Superalgos.IntelliToken.IntelliErc20Token
 {
     public abstract class Erc20Token<TContract> : SmartContract<TContract>
         where TContract : SmartContract<TContract>

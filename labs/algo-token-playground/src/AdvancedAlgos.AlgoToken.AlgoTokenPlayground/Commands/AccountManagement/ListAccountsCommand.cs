@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AccountManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AccountManagement
 {
     public class ListAccountsCommand : ICommand
     {

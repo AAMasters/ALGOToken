@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground
+namespace Superalgos.IntelliToken.IntelliTokenPlayground
 {
     public static class Program
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
+using Superalgos.IntelliToken.Framework.Ethereum;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AccountManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AccountManagement
 {
     public class NewAccountCommand : ICommand
     {

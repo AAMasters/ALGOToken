@@ -4,7 +4,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum.Reflection
+namespace Superalgos.IntelliToken.Framework.Ethereum.Reflection
 {
     public static class AssemblyExtensions
     {

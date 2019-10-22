@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AccountManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AccountManagement
 {
     public static class AccountCounter
     {

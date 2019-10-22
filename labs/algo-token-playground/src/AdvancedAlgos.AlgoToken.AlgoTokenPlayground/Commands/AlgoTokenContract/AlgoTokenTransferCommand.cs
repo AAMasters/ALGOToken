@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoErc20Token;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliErc20Token;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoTokenContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.IntelliTokenContract
 {
-    public class AlgoTokenTransferCommand : EthInvokeTransactionalFunctionCommand
+    public class IntelliTokenTransferCommand : EthInvokeTransactionalFunctionCommand
     {
         public string To { get; set; }
         public BigInteger Value { get; set; }
 
         protected override async Task<TransactionReceipt> ExecuteAsync(RuntimeContext context, string contractAddress, Web3 web3)
         {
-            var algoToken = new AlgoTokenV1(contractAddress, web3, context.GasPriceProvider);
+            var algoToken = new IntelliTokenV1(contractAddress, web3, context.GasPriceProvider);
             return await algoToken.TransferAsync(context.ResolveAccountOrContractReference(To), Value);
         }
     }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement
 {
     public class ListContractsCommand : ICommand
     {

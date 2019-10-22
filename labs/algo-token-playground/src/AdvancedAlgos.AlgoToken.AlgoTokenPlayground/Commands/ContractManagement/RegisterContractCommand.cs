@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
+using Superalgos.IntelliToken.Framework.Ethereum;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement
 {
     public class RegisterContractCommand : ICommand
     {

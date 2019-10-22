@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.Framework.Ethereum;
 using Nethereum.Util;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Runtime
 {
     public class StaticGasPriceProvider : IGasPriceProvider
     {

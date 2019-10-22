@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
     public static class CommonParsers
     {

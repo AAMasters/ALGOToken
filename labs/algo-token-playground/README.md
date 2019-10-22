@@ -1,4 +1,4 @@
-# AlgoToken Playground
+# IntelliToken Playground
 
 ## Building the application
 
@@ -9,7 +9,7 @@
 
 ## Running the application
 
-* Run the application by executing proper binary file for your OS. The file name is `AdvancedAlgos.AlgoToken.AlgoTokenPlayground` plus the `.exe` extension on Windows.
+* Run the application by executing proper binary file for your OS. The file name is `Superalgos.IntelliToken.IntelliTokenPlayground` plus the `.exe` extension on Windows.
 
 ## Using the application
 
@@ -134,23 +134,23 @@ Use the command `register-contract <address> <name>` to create an alias for an e
 * `address`: the address of the contract 
 * `name`: the alias name for the specified contract address
 
-## Algo Contracts
+## Intelli Contracts
 
 The detailed specification of the following contracts can be found in the "Smart Contracts Requirements / Specifications" document.
 
 The goal of this document is to describe the commands available in the playground. For the behavior/business rules check the mentioned document.
 
-### AlgoToken
+### IntelliToken
 
-AlgoToken is an standard ERC20 token contract. All available functions belong the ERC20 specification.
+IntelliToken is an standard ERC20 token contract. All available functions belong the ERC20 specification.
 
-The following commands are supported for the `AlgoToken` contract:
+The following commands are supported for the `IntelliToken` contract:
 
 #### deploy-algotoken
 
 `deploy-algotoken [-n <contract_name>]`
 
-Creates a new instance of the `AlgoToken` contract.
+Creates a new instance of the `IntelliToken` contract.
 
 >Example: `deploy-algotoken -n token`
 
@@ -201,7 +201,7 @@ The following commands are supported for the `AlgoPool` contract:
 
 Creates a new instance of the `AlgoPool` contract.
 * `poolType`: the type of pool (uint8: 0 = MinerPool, 1 = ReferralPool)
-* `tokenAddress`: the address of the AlgoToken contract
+* `tokenAddress`: the address of the IntelliToken contract
 
 >Example: `deploy-algopool 0 token -n dev_pool`
 
@@ -209,8 +209,8 @@ Creates a new instance of the `AlgoPool` contract.
 
 `<contract>.algopool-transfertominer <minerAddress>`
 
-Transfer tokens from the AlgoPool balance to the AlgoMiner balance. The amount of tokens to be transfered is determined by the AlgoMiner category (see the specification document).
-* `minerAddress`: the address of the AlgoMiner contract
+Transfer tokens from the AlgoPool balance to the IntelliMiner balance. The amount of tokens to be transfered is determined by the IntelliMiner category (see the specification document).
+* `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `dev_pool.algopool-transfertominer miner_1`
 
@@ -222,9 +222,9 @@ Terminates the contract and return its balance to the creator.
 
 >Example: `dev_pool.algopool-terminate`
 
-### AlgoMiner
+### IntelliMiner
 
-The following commands are supported for the `AlgoMiner` contract:
+The following commands are supported for the `IntelliMiner` contract:
 
 #### deploy-algominer
 
@@ -235,7 +235,7 @@ Creates a new instance of the `AlgoPool` contract.
 * `category`: the category of miner (uint8: valid from 0 to 5)
 * `minerAccountAddress`: the address of the miner's owner
 * `referralAccountAddress`: the address of the referral
-* `tokenAddress`: the address of the AlgoToken contract
+* `tokenAddress`: the address of the IntelliToken contract
 
 >Example: `deploy-algominer 0 2 miner_1_account referral_1_account token -n miner_1`
 
@@ -259,8 +259,8 @@ Deactivates the miner.
 
 `<contract>.algominer-migrateminer <newMinerAddress>`
 
-Transfer all tokens from this AlgoMiner another AlgoMiner. The miner must be deactivated before running this operation
-* `newMinerAddress`: the address of the new AlgoMiner contract
+Transfer all tokens from this IntelliMiner another IntelliMiner. The miner must be deactivated before running this operation
+* `newMinerAddress`: the address of the new IntelliMiner contract
 
 >Example: `miner_1.algominer-migrateminer miner_2`
 
@@ -318,7 +318,7 @@ Stops the miner (used by the owner).
 
 `<contract>.algominer-mine`
 
-This operation is executed by the system to request a payment from the AlgoMiner to the owner. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
+This operation is executed by the system to request a payment from the IntelliMiner to the owner. The amount to pay is computed using the rules specified in the "Smart Contracts Requirements / Specifications" document.
 
 >Example: `miner_1.algominer-mine`
 
@@ -366,7 +366,7 @@ The following commands are supported for the `AlgoFees` contract:
 `deploy-algofees <tokenAddress> [-n <contract_name>]`
 
 Creates a new instance of the `AlgoFees` contract.
-* `tokenAddress`: the address of the AlgoToken contract
+* `tokenAddress`: the address of the IntelliToken contract
 
 >Example: `deploy-algofees token -n fees1`
 
@@ -375,7 +375,7 @@ Creates a new instance of the `AlgoFees` contract.
 `<contract>.algofees-registerminer <minerAddress>`
 
 Registers a miner with the AlgoFees.
-* `minerAddress`: the address of the AlgoMiner contract
+* `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `fees1.algofees-registerminer miner_0`
 
@@ -384,7 +384,7 @@ Registers a miner with the AlgoFees.
 `<contract>.algofees-unregisterminer <minerAddress>`
 
 Unregisters a miner from the AlgoFees.
-* `minerAddress`: the address of the AlgoMiner contract
+* `minerAddress`: the address of the IntelliMiner contract
 
 >Example: `fees1.algofees-unregisterminer miner_0`
 

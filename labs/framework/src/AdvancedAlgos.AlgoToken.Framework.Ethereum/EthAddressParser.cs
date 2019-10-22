@@ -4,7 +4,7 @@ using System.Text;
 using Nethereum.Hex.HexConvertors.Extensions;
 using Nethereum.Util;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum
+namespace Superalgos.IntelliToken.Framework.Ethereum
 {
     public static class EthAddressParser
     {

@@ -1,2 +1,2 @@
 #!/bin/bash
-dotnet publish ../src/AdvancedAlgos.AlgoToken.AlgoTokenPlayground/AdvancedAlgos.AlgoToken.AlgoTokenPlayground.csproj -c Release -o ../../build/release/win-x64 --self-contained -r win-x64
+dotnet publish ../src/Superalgos.IntelliToken.IntelliTokenPlayground/Superalgos.IntelliToken.IntelliTokenPlayground.csproj -c Release -o ../../build/release/win-x64 --self-contained -r win-x64

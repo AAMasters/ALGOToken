@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.Framework.Ethereum;
 using Nethereum.Contracts;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution
+namespace Superalgos.IntelliToken.IntelliTokenDistribution
 {
-    public class AlgoMiner : SmartContract<AlgoMiner>
+    public class IntelliMiner : SmartContract<IntelliMiner>
     {
         private Function _activateMiner;
         private Function _deactivateMiner;
@@ -28,11 +28,11 @@ namespace AdvancedAlgos.AlgoToken.AlgoTokenDistribution
         private Function _addCoreTeam;
         private Function _addSupervisor;
 
-        public AlgoMiner(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
-        public AlgoMiner(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
+        public IntelliMiner(Web3 web3, IGasPriceProvider gasPriceProvider) : base(web3, gasPriceProvider) { }
+        public IntelliMiner(string contractAddress, Web3 web3, IGasPriceProvider gasPriceProvider) : base(contractAddress, web3, gasPriceProvider) { }
 
-        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(AlgoMiner)}.abi";
-        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(AlgoMiner)}.bin";
+        protected override string AbiResourceName => $"SmartContracts.src.bin.{nameof(IntelliMiner)}.abi";
+        protected override string BinResourceName => $"SmartContracts.src.bin.{nameof(IntelliMiner)}.bin";
         protected override BigInteger DeploymentGasUnits => 1600000;
 
         public Task<TransactionReceipt> DeployAsync(byte minerType, byte category, string minerAccountAddress, string referralAccountAddress, string tokenAddress)

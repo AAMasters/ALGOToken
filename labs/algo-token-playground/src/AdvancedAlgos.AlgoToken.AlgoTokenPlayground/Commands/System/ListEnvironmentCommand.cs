@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
+using Superalgos.IntelliToken.Framework.Ethereum;
 using Nethereum.Util;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.System
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.System
 {
     public class ListEnvironmentCommand : ICommand
     {

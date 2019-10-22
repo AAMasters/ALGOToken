@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\framework\src\AdvancedAlgos.AlgoToken.Framework.Ethereum\AdvancedAlgos.AlgoToken.Framework.Ethereum.csproj" />
+    <ProjectReference Include="..\..\..\framework\src\Superalgos.IntelliToken.Framework.Ethereum\Superalgos.IntelliToken.Framework.Ethereum.csproj" />
   </ItemGroup>
 
 </Project>

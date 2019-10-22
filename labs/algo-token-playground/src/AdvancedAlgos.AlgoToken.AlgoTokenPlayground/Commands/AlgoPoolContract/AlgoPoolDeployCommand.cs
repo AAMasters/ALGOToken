@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenDistribution;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.ContractManagement;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenDistribution;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Commands.ContractManagement;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.AlgoPoolContract
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.AlgoPoolContract
 {
     public class AlgoPoolDeployCommand : DeployContractCommand
     {

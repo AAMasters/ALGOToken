@@ -5,7 +5,7 @@ using System.Text;
 using Nethereum.Util;
 using Sprache;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Parsers
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Parsers
 {
     public static class EthUnitParsers
     {

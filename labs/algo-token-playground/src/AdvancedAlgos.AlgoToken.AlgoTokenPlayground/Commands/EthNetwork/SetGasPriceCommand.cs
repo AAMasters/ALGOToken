@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Runtime;
+using Superalgos.IntelliToken.IntelliTokenPlayground.Runtime;
 
-namespace AdvancedAlgos.AlgoToken.AlgoTokenPlayground.Commands.EthNetwork
+namespace Superalgos.IntelliToken.IntelliTokenPlayground.Commands.EthNetwork
 {
     public class SetGasPriceCommand : ICommand
     {

@@ -3,12 +3,12 @@ pragma solidity 0.4.24;
 import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
-import "./IAlgoMiner.sol";
+import "./IIntelliMiner.sol";
 import "./ERC20TokenHolder.sol";
 import "./AlgoSystemRole.sol";
-import "./AlgoCoreTeamRole.sol";
+import "./IntelliCoreTeamRole.sol";
 
-contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole {
+contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole {
     using SafeERC20 for IERC20;
 
     uint256 private constant CAT_0_VALUE_PROPORTION = 1;
@@ -24,7 +24,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole {
     constructor(address tokenAddress)
         ERC20TokenHolder(tokenAddress)
         AlgoSystemRole()
-        AlgoCoreTeamRole()
+        IntelliCoreTeamRole()
         public {
         _miners.push(address(0)); // Reserved as a marker for unregistered miner.
     }
@@ -33,9 +33,9 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole {
         require(_miners.length < 1000);
         require(_minersByAddress[minerAddress] == 0);
 
-        IAlgoMiner algoMiner = IAlgoMiner(minerAddress);
+        IIntelliMiner algoMiner = IIntelliMiner(minerAddress);
         
-        require(algoMiner.isAlgoMiner());
+        require(algoMiner.isIntelliMiner());
         
         uint8 minerCategory = algoMiner.getCategory();
 
@@ -79,7 +79,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole {
         uint256[6] memory miners;
 
         for(uint256 i = 1; i < _miners.length; i++) {
-            IAlgoMiner algoMiner = IAlgoMiner(_miners[i]);
+            IIntelliMiner algoMiner = IIntelliMiner(_miners[i]);
 
             if(!algoMiner.isMining()) continue;
 
@@ -119,7 +119,7 @@ contract AlgoFees is ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole {
 
         // Transfer the fees to ENABLED miners...
         for(i = 1; i < _miners.length; i++) {
-            algoMiner = IAlgoMiner(_miners[i]);
+            algoMiner = IIntelliMiner(_miners[i]);
 
             if(!algoMiner.isMining()) continue;
 

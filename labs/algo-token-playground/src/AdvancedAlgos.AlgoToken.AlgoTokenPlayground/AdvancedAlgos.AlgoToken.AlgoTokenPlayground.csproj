@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\algo-erc20-token\src\AdvancedAlgos.AlgoToken.AlgoErc20Token\AdvancedAlgos.AlgoToken.AlgoErc20Token.csproj" />
-    <ProjectReference Include="..\..\..\algo-token-distribution\src\AdvancedAlgos.AlgoToken.AlgoTokenDistribution\AdvancedAlgos.AlgoToken.AlgoTokenDistribution.csproj" />
-    <ProjectReference Include="..\..\..\framework\src\AdvancedAlgos.AlgoToken.Framework.Ethereum\AdvancedAlgos.AlgoToken.Framework.Ethereum.csproj" />
+    <ProjectReference Include="..\..\..\algo-erc20-token\src\Superalgos.IntelliToken.IntelliErc20Token\Superalgos.IntelliToken.IntelliErc20Token.csproj" />
+    <ProjectReference Include="..\..\..\algo-token-distribution\src\Superalgos.IntelliToken.IntelliTokenDistribution\Superalgos.IntelliToken.IntelliTokenDistribution.csproj" />
+    <ProjectReference Include="..\..\..\framework\src\Superalgos.IntelliToken.Framework.Ethereum\Superalgos.IntelliToken.Framework.Ethereum.csproj" />
   </ItemGroup>
 
 </Project>

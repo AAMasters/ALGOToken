@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.Extensions;
-using AdvancedAlgos.AlgoToken.Framework.Ethereum.Reflection;
+using Superalgos.IntelliToken.Framework.Ethereum.Extensions;
+using Superalgos.IntelliToken.Framework.Ethereum.Reflection;
 using Nethereum.Contracts;
 using Nethereum.Hex.HexTypes;
 using Nethereum.RPC.Eth.DTOs;
 using Nethereum.Web3;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum
+namespace Superalgos.IntelliToken.Framework.Ethereum
 {
     public abstract class SmartContract<TContract> where TContract : SmartContract<TContract>
     {

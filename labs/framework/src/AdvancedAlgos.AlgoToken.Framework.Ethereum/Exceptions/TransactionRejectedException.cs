@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using Nethereum.RPC.Eth.DTOs;
 
-namespace AdvancedAlgos.AlgoToken.Framework.Ethereum.Exceptions
+namespace Superalgos.IntelliToken.Framework.Ethereum.Exceptions
 {
     public class TransactionRejectedException : Exception
     {

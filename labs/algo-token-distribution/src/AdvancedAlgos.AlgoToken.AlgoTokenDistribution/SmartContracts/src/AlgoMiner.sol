@@ -3,14 +3,14 @@ pragma solidity 0.4.24;
 import "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol";
 import "openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
 
-import "./IAlgoMiner.sol";
+import "./IIntelliMiner.sol";
 import "./AlgoCommon.sol";
 import "./ERC20TokenHolder.sol";
 import "./AlgoSystemRole.sol";
-import "./AlgoCoreTeamRole.sol";
+import "./IntelliCoreTeamRole.sol";
 import "./AlgoSupervisorRole.sol";
 
-contract AlgoMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeamRole, AlgoSupervisorRole, IAlgoMiner {
+contract IntelliMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, IntelliCoreTeamRole, AlgoSupervisorRole, IIntelliMiner {
     using SafeERC20 for IERC20;
 
     uint256 private constant DAYS_PER_YEAR = 365;
@@ -41,7 +41,7 @@ contract AlgoMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeam
     constructor(MinerType minerType, uint8 category, address minerAccountAddress, address referralAccountAddress, address tokenAddress)
         ERC20TokenHolder(tokenAddress)
         AlgoSystemRole()
-        AlgoCoreTeamRole()
+        IntelliCoreTeamRole()
         AlgoSupervisorRole()
         public {
         
@@ -168,7 +168,7 @@ contract AlgoMiner is AlgoCommon, ERC20TokenHolder, AlgoSystemRole, AlgoCoreTeam
         _terminate();
     }
 
-    function isAlgoMiner() public pure returns (bool) {
+    function isIntelliMiner() public pure returns (bool) {
         return true;
     }
 
